@@ -113,3 +113,8 @@ main aside {
     padding: 12px;
     border: 2px solid #a4de02;
 }
+
+/* Keep the footer below the floated aside */
+footer {
+    clear: both;
+}
