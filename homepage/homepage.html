@@ -12,7 +12,8 @@
     <style>.join { border-left: 6px solid #7aa602; }</style>
 </head>
 <body>
-   
+    <!--!enable keyboard nav!--->
+<a href="#main" class="skip-link">Skip to main content</a>   
 <header>
  <nav>
     <ul>
@@ -23,7 +24,7 @@
     </ul>
  </nav>
 </header>
-<main>
+<main id="main" tabindex="-1">
     <div class="search-bar">
     <form action="#" method="get" role="search">
     <input type="search" name="q" placeholder="Search..." aria-label="Search">
@@ -39,17 +40,19 @@
 </section>
 
 <section>
-    <h3>Who are we?</h3>
+    <h2>Who are we?</h2>
     <p>Evergreen Energy is a renewable energy company.We are strengthening our technology team to build websites that promote clean energy solutions, share project information and involve the public in what we build.</p>
-    <img src="images/powerplantwork.jpg" alt="y" class="section-img">
+    <img src="images/powerplantwork.jpg" alt="Engineers gathered around a monitor reviewing solar panel designs"" class="section-img">
 </section> 
 <section>     
-    <h3>What do we do?</h3>
-    <p>We plan and deliver wind, solar and battery storage projects. Our technology team turns that work into clear, accessible websites, so communities can see what is being built, how it performs and how to have their say.</p>
+    <h2>What do we do?</h2>
+    
+<p>We plan and deliver wind, solar and battery storage projects. Our technology team turns that work into clear, accessible websites, so communities can see what is being built, how it performs and how to have their say.</p>
 </section>
 <section>
-    <h3>Our Projects</h3>
-    <div class="table-wrap">
+    <h2>Our Projects</h2>
+    <!---!side way scroll with keyboard-->
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Evergreen Energy projects table">
     <table>
         <tr>
         <th colspan="4">Evergreen Energy Projects</th>
@@ -94,20 +97,20 @@
     <p1> Want to look at more projects like these? <a href="jobdescription.html"> Click here </a></p1> or, learn more about our team<a href="aboutus.html">Click here.</a>
 </section> 
 <section>
-    <h3>Our Office Locations</h3>
+    <h2>Our Office Locations</h2>
     <ul class="offices">
         <li>
-              <img src="images/brisbane.jpg" alt="Brisbane city skyline" class="office-img">
+            <img src="images/brisbane.jpg" alt="Brisbane city skyline" class="office-img">
             <strong>Brisbane</strong>
             <span>Queensland Office</span>
         </li>
         <li>
-             <img src="images/melbourne.jpg" alt="Melbourne city skyline" class="office-img">
+            <img src="images/melbourne.jpg" alt="Melbourne city skyline" class="office-img">
             <strong>Melbourne</strong>
             <span>Victoria Office</span>
         </li>
         <li>
-             <img src="images/Sydney.jpg" alt="Sydney Opera House and harbour" class="office-img">
+            <img src="images/Sydney.jpg" alt="Sydney Opera House and harbour" class="office-img">
             <strong>Sydney</strong>
             <span>New South Wales Office</span>
         </li>
@@ -115,26 +118,23 @@
 
 </section> 
 
-  <div class="join-row">
+<div class="join-row">
 
   <!-- your existing Join Our Tech Team section -->
   <section class="join">
-    <h3>Join Our Tech Team</h3>
+    <h2>Join Our Tech Team</h2>
     <p>We are growing our technology team. Explore our roles and apply today.</p>
     <a class="apply" href="jobapplication.html" >Apply now</a>
   </section>
 
-  <!-- testimonials with two quotes -->
-  <section class="testimonial" aria-labelledby="testimonial-heading">
-    <h3 id="testimonial-heading">What Our Team Says</h3>
-
-    <blockquote>
-      <p>"Getting this job was the best career move I've made. The team is supportive, the work is meaningful, and I've grown so much since joining."</p>
-      <footer><cite>Redha Waseem, Software Developer</cite></footer>
-    </blockquote>
-
-  </section>
-
+  <!-- testimonials -->
+  <aside class="testimonial" aria-labelledby="testimonial-heading">
+  <h2 id="testimonial-heading">What Our Team Says</h2>
+  <blockquote>
+    <p>“It feels good to go to work knowing my code helps people see and understand clean energy projects in their community."</p>
+    <footer><cite>Raza Waqas, Software Developer</cite></footer>
+  </blockquote>
+  </aside>
 </div>
 <section>
     <!---inline style element-->
