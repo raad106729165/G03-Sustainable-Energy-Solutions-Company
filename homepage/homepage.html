@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href =homepagestyle.css>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sustainable Energy Solutions Company: clean energy projects and careers.">
@@ -10,58 +8,147 @@
     <meta name="author" content="Group G03">
     <title>Home | Sustainable Energy Solutions</title>
     <link rel="stylesheet" href="homepagestyle.css">
+    <!--one internal style element-->
+    <style>.join { border-left: 6px solid #7aa602; }</style>
 </head>
 <body>
-    <header>
-        <h1>Sustainable Energy Solutions</h1>
-        <nav>
-            <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="jobdescription.html">Job Descriptions</a></li>
-                <li><a href="jobapplication.html">Apply</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-             <table>
-    <tr>
-      <td>
-        <h2>Power of Clean Energy</h2>
-        <button>Join Team</button>
-      </td>
-    </tr>
-  </table>
-            <p>We design, build and maintain renewable energy systems for homes, businesses and communities.</p>
-            <a href="jobdescription.html">View open positions</a>
-        </section>
+   
+<header>
+ <nav>
+    <ul>
+     <li><a href="homepage.html">Home</a></li>
+     <li><a href="jobdescription.html">Job Descriptions</a></li>
+     <li><a href="jobapplication.html">Apply</a></li>
+     <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+ </nav>
+</header>
+<main>
+    <div class="search-bar">
+  <form action="#" method="get" role="search">
+    <input type="search" name="q" placeholder="Search..." aria-label="Search">
+    <button type="submit">Search</button>
+  </form>
+</div>
+ <section class="hero">
+    <div class="hero-content">
+     <h1>Power of Clean Energy</h1>
+      <p id="intro-text">Your career. Our planet. One clean energy future.</p>
+      <a href="jobapplication.html" class="apply">Apply now</a>
+    </div>
+ </section>
 
-        <section>
-            <h2>Our Solutions</h2>
-            <article>
-                <h3>Solar Energy</h3>
-                <p>Rooftop and utility-scale solar installations.</p>
-            </article>
-            <article>
-                <h3>Wind Energy</h3>
-                <p>Onshore wind projects for reliable, low-carbon power.</p>
-            </article>
-            <article>
-                <h3>Energy Storage</h3>
-                <p>Battery systems that store clean energy for when it is needed.</p>
-            </article>
-        </section>
+<section>
+    <h3>Who are we?</h3>
+     <p>Evergreen Energy is a renewable energy company.We are strengthening our technology team to build websites that promote clean energy solutions, share project information and involve the public in what we build.</p>
+     <img src="Images/powerplantwork.jpg" alt="y" class="section-img">
+</section> 
+<section>     
+    <h3>What we do?</h3>
+     <p>We plan and deliver wind, solar and battery storage projects. Our technology team turns that work into clear, accessible websites, so communities can see what is being built, how it performs and how to have their say.</p>
+</section>
+<section>
+    <h3>Our Projects</h3>
+    <div class="table-wrap">
+    <table>
+        <tr>
+        <th colspan="4">Evergreen Energy Projects</th>
+        </tr>
+        <tr>
+            <th>Energy Type</th>
+            <th>Project</th>
+            <th>Location</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+        <td rowspan="2">Solar</td>
+            <td>Greenfield Solar Farm</td>
+            <td>Queensland</td>
+            <td>In Progress</td>
+        </tr>
+        <tr>
+            <td>Sunrise Rooftop Program</td>
+            <td>Victoria</td>
+            <td>In Progress </td>
+        </tr>
+        <tr>
+            <td rowspan="2">Wind</td>
+            <td>Coastal Wind Farm</td>
+            <td>Victoria</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>Highland Wind Project</td>
+            <td>Queensland</td>
+            <td>In Progress</td>
+        </tr>
+        <tr>
+            <td>Battery Storage</td>
+            <td>Metropolitan Battery Project</td>
+            <td>New South Wales</td>
+            <td>Planned</td>
+        </tr>
+    </table>
+    </div>
 
-        <section>
-            <h2>Join Our Tech Team</h2>
-            <p>We are growing our technology team. Explore our roles and apply today.</p>
-            <a href="jobapplication.html">Apply now</a>
-        </section>
-    </main>
+    <p1> Want to look at more projects like these? <a href="jobdescription.html"> Click here </a></p1> or, learn more about our team<a href="aboutus.html">Click here.</a>
+</section> 
+<section>
+    <h3>Our Office Locations</h3>
+    <ul class="offices">
+        <li>
+              <img src="Images/brisbane.jpg" alt="Brisbane city skyline" class="office-img">
+            <strong>Brisbane</strong>
+            <span>Queensland Office</span>
+        </li>
+        <li>
+             <img src="Images/melbourne.jpg" alt="Melbourne city skyline" class="office-img">
+            <strong>Melbourne</strong>
+            <span>Victoria Office</span>
+        </li>
+        <li>
+             <img src="Images/Sydney.jpg" alt="Sydney Opera House and harbour" class="office-img">
+            <strong>Sydney</strong>
+            <span>New South Wales Office</span>
+        </li>
+    </ul>
 
-    <footer>
-        <p>&copy; 2026 Sustainable Energy Solutions Company. Group G03, COS10026 Web Technology Project.</p>
-    </footer>
+</section> 
+
+  <div class="join-row">
+
+  <!-- your existing Join Our Tech Team section -->
+  <section class="join">
+    <h3>Join Our Tech Team</h3>
+    <p>We are growing our technology team. Explore our roles and apply today.</p>
+    <a class="apply" href="jobapplication.html" >Apply now</a>
+  </section>
+
+  <!-- testimonials with two quotes -->
+  <section class="testimonial" aria-labelledby="testimonial-heading">
+    <h3 id="testimonial-heading">What Our Team Says</h3>
+
+    <blockquote>
+      <p>"Getting this job was the best career move I've made. The team is supportive, the work is meaningful, and I've grown so much since joining."</p>
+      <footer><cite>Redha Waseem, Software Developer</cite></footer>
+    </blockquote>
+
+  </section>
+
+</div>
+<section>
+    <!---inline style element-->
+    <strong><p style="font-style: italic; color: #155b36;">We acknowledge the Traditional Custodians of the lands on which we work and live, and pay our respects to Elders past and present. Sovereignty was never ceded.</p></strong>
+    
+</section>
+
+
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Sustainable Energy Solutions Company. Group G03, COS10026 Web Technology Project.</p>
+</footer>
+
 </body>
 </html>
