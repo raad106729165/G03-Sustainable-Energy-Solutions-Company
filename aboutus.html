@@ -1,84 +1,208 @@
 <!DOCTYPE html>
+<!--
+    aboutus.html - About Us page for the Evergreen Energy website
+    Author:  Rayahen Raad (Team leader), Group G03
+    Unit:    COS10026 Web Technology Project
+    Purpose: Introduces the group, its members, their roles and contributions
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Group G03 and the Sustainable Energy Solutions Company project.">
-    <meta name="keywords" content="sustainable energy, renewable energy, solar, wind, clean energy, careers">
-    <meta name="author" content="Group G03">
-    <title>About Us | Sustainable Energy Solutions</title>
-    <link rel="stylesheet" href="aboutusstyle.css">
+    <meta name="description" content="Meet Group G03, the team behind the Evergreen Energy careers website: members, roles, contributions and how we worked together.">
+    <meta name="keywords" content="Evergreen Energy, about us, Group G03, team, sustainable energy, clean energy careers">
+    <meta name="author" content="Rayahen Raad, Group G03">
+    <title>About Us | Evergreen Energy</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <!-- External stylesheet shared by every page -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Embedded CSS example: styles used only on the About Us page -->
+    <style>
+        .slogan {
+            margin-top: -8px;
+            font-size: 1.1em;
+            font-style: italic;
+            color: #2e7d46;
+        }
+    </style>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- Shared header and navigation (designed by Marwa) -->
     <header>
-        <h1>Sustainable Energy Solutions</h1>
-        <nav>
+        <h1>Evergreen Energy</h1>
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="homepage.html">Home</a></li>
                 <li><a href="jobdescription.html">Job Descriptions</a></li>
                 <li><a href="jobapplication.html">Apply</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="aboutus.html" class="active" aria-current="page">About Us</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>About Us</h2>
 
-        <section>
-            <h3>Our Group</h3>
-            <dl>
-                <dt>Group name</dt>
-                <dd>G03</dd>
-                <dt>Unit</dt>
-                <dd>COS10026 Web Technology Project</dd>
-                <dt>Tutor</dt>
-                <dd>Tutor name</dd>
-            </dl>
+    <main id="main">
+        <h2>About Us</h2>
+        <p class="slogan">Your Career. Our Future. One Clean Energy Future</p>
+
+        <!-- ===== Group introduction ===== -->
+        <section class="group-intro" aria-labelledby="group-heading">
+            <figure class="group-logo">
+                <img src="images/logo.png" alt="Evergreen Energy logo: a wind turbine, sun, leaves and water inside a circle" width="200" height="200">
+                <figcaption>Our shared brand, used across every page</figcaption>
+            </figure>
+            <div>
+                <h3 id="group-heading">Our Group</h3>
+                <p>We are Group G03, five students who came together to build the careers website for <strong>Evergreen Energy</strong>, a clean energy company growing its technology team. Each of us owned one part of the site, and we shared one brand, one stylesheet and one goal: a site that makes applying for a clean energy career simple.</p>
+                <dl class="group-info">
+                    <dt>Group name</dt>
+                    <dd>G03</dd>
+                    <dt>Team leader</dt>
+                    <dd>Rayahen Raad</dd>
+                    <dt>Unit</dt>
+                    <dd>COS10026 Web Technology Project</dd>
+                    <dt>Tutor</dt>
+                    <dd>Tutor name</dd>
+                </dl>
+            </div>
         </section>
 
-        <section>
-            <h3>Members and Contributions</h3>
-            <table>
+        <!-- ===== Project at a glance ===== -->
+        <section aria-labelledby="glance-heading">
+            <h3 id="glance-heading">Project at a Glance</h3>
+            <ul class="team-stats">
+                <li><strong>5</strong> team members</li>
+                <li><strong>4</strong> web pages</li>
+                <li><strong>1</strong> shared stylesheet</li>
+                <li><strong>1</strong> GitHub repository</li>
+            </ul>
+        </section>
+
+        <!-- ===== Members and contributions ===== -->
+        <section aria-labelledby="members-heading">
+            <h3 id="members-heading">Members and Contributions</h3>
+            <div class="table-wrapper">
+            <table class="members-table">
+                <caption>Group G03 members, their roles and the part of the site each person built</caption>
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Student ID</th>
-                        <th>Contribution</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Student ID</th>
+                        <th scope="col">Team role</th>
+                        <th scope="col">Contribution</th>
+                        <th scope="col">Main file</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- Inline CSS example: highlights the team leader's row -->
+                    <tr style="font-weight: bold;">
+                        <th scope="row">Rayahen Raad</th>
+                        <td>106729165</td>
+                        <td>Team leader</td>
+                        <td>About Us page, shared stylesheet</td>
+                        <td><code>aboutus.html</code></td>
+                    </tr>
                     <tr>
-                        <td>Member 1</td>
-                        <td>000000000</td>
+                        <th scope="row">Redha</th>
+                        <td>106389158</td>
+                        <td>Team member</td>
                         <td>Home page</td>
+                        <td><code>homepage.html</code></td>
                     </tr>
                     <tr>
-                        <td>Member 2</td>
-                        <td>000000000</td>
-                        <td>Job descriptions page</td>
+                        <th scope="row">Marwa</th>
+                        <td>106245690</td>
+                        <td>Team member</td>
+                        <td>Navigation bar and footer</td>
+                        <td><code>header-footer.html</code></td>
                     </tr>
                     <tr>
-                        <td>Member 3</td>
-                        <td>000000000</td>
+                        <th scope="row">Hiba</th>
+                        <td>106246499</td>
+                        <td>Team member</td>
                         <td>Job application page</td>
+                        <td><code>jobapplication.html</code></td>
                     </tr>
                     <tr>
-                        <td>Member 4</td>
-                        <td>000000000</td>
-                        <td>About us page</td>
+                        <th scope="row">Zainab</th>
+                        <td>106194213</td>
+                        <td>Team member</td>
+                        <td>Job descriptions page</td>
+                        <td><code>jobdescription.html</code></td>
                     </tr>
                 </tbody>
             </table>
+            </div>
         </section>
 
-        <section>
-            <h3>Our Mission</h3>
-            <p>Sustainable Energy Solutions delivers clean, affordable energy and builds the technical talent to support it.</p>
+        <!-- ===== Meet the team (company roles for the Evergreen Energy story) ===== -->
+        <section aria-labelledby="team-heading">
+            <h3 id="team-heading">Meet the Team</h3>
+            <div class="team-grid">
+            <article class="team-card leader">
+                <span class="avatar" aria-hidden="true">R</span>
+                <h4>Rayahen, Technology Lead</h4>
+                <p>Rayahen drives Evergreen Energy&rsquo;s digital strategy and the growth of its technology team. With a background in software engineering and project management, Rayahen coordinates the company&rsquo;s digital platforms, from client monitoring tools to this website, and keeps technology aligned with the company&rsquo;s clean energy goals.</p>
+            </article>
+            <article class="team-card">
+                <span class="avatar" aria-hidden="true">R</span>
+                <h4>Redha, Communications Lead</h4>
+                <p>Redha shapes how Evergreen Energy tells its story. Having worked alongside the engineering teams since the company&rsquo;s early projects, Redha knows the work inside out and turns technical achievements into clear, engaging public content.</p>
+            </article>
+            <article class="team-card">
+                <span class="avatar" aria-hidden="true">M</span>
+                <h4>Marwa, Design Lead</h4>
+                <p>Marwa guides the visual identity of Evergreen Energy across print and digital. Working closely with Redha, Marwa makes sure every project update, campaign, and web page reflects the company accurately and looks the part.</p>
+            </article>
+            <article class="team-card">
+                <span class="avatar" aria-hidden="true">Z</span>
+                <h4>Zainab, Talent Lead</h4>
+                <p>Zainab heads hiring across the company, with a current focus on building the new technology team. Zainab works with each department to define roles and find people whose skills fit both the job and the mission.</p>
+            </article>
+            <article class="team-card">
+                <span class="avatar" aria-hidden="true">H</span>
+                <h4>Hiba, People Operations Lead</h4>
+                <p>Hiba manages the recruitment journey from application to onboarding. Hiba designed the company&rsquo;s application system to make applying simple and fair, and makes sure every new hire has a smooth start.</p>
+            </article>
+            </div>
+        </section>
+
+        <!-- ===== Teamwork ===== -->
+        <section aria-labelledby="teamwork-heading">
+            <h3 id="teamwork-heading">How We Worked Together</h3>
+            <ol class="workflow">
+                <li><strong>Plan:</strong> we agreed on the company, brand colours, logo and page list, and gave each member one page to own.</li>
+                <li><strong>Build:</strong> each member worked on their own branch in our shared GitHub repository, so nobody overwrote anyone else&rsquo;s work.</li>
+                <li><strong>Share:</strong> Marwa&rsquo;s header and footer and one shared stylesheet keep every page looking like one website.</li>
+                <li><strong>Merge:</strong> finished pages were merged into the main branch, then checked together for consistency and validation.</li>
+            </ol>
+        </section>
+
+        <!-- ===== Mission ===== -->
+        <section aria-labelledby="mission-heading">
+            <h3 id="mission-heading">Our Mission</h3>
+            <blockquote class="mission">
+                <p>Evergreen Energy delivers clean, affordable energy and builds the technical talent to support it.</p>
+            </blockquote>
+        </section>
+
+        <!-- ===== Acknowledgements ===== -->
+        <section aria-labelledby="ack-heading">
+            <h3 id="ack-heading">Acknowledgements</h3>
+            <ul>
+                <li>Evergreen Energy is a fictional company created for COS10026 at Swinburne University of Technology.</li>
+                <li>Page markup and CSS checked with the <a href="https://validator.w3.org/">W3C Markup Validation Service</a> and the <a href="https://jigsaw.w3.org/css-validator/">W3C CSS Validation Service</a>.</li>
+                <li>Logo: source to be confirmed.</li>
+                <li>Claude (Anthropic) was used to help write and review the code on this page.</li>
+            </ul>
         </section>
     </main>
 
+    <!-- Shared footer (designed by Marwa) -->
     <footer>
-        <p>&copy; 2026 Sustainable Energy Solutions Company. Group G03, COS10026 Web Technology Project.</p>
+        <p>&copy; 2026 Evergreen Energy. Group G03, COS10026 Web Technology Project.</p>
+        <p>Last updated <time datetime="2026-10-26">26 October 2026</time></p>
     </footer>
 </body>
 </html>

@@ -1,0 +1,478 @@
+/* =====================================================================
+   styles.css - shared external stylesheet for the Evergreen Energy site
+   Group G03, COS10026 Web Technology Project
+
+   Contents
+     1. Colour reference
+     2. Base and reset
+     3. Accessibility helpers
+     4. Header and navigation (shared)
+     5. Main content (shared)
+     6. Footer (shared)
+     7. About Us page
+     8. Responsive layout (media queries)
+     9. Accessibility media queries
+   ===================================================================== */
+
+
+/* ---------------------------------------------------------------------
+   1. Colour reference (all text/background pairs meet WCAG AA contrast)
+      Dark green   #1e5631   header, headings, table headings
+      Mid green    #2e7d46   hover states, slogan
+      Deep green   #163f24   footer background
+      Lime accent  #a4de02   active link, focus outline, card borders
+      Text         #1f2a24
+      Page         #f5f8f6
+   --------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------
+   2. Base and reset
+   --------------------------------------------------------------------- */
+
+/* Universal selector: include padding and border in element widths */
+* {
+    box-sizing: border-box;
+}
+
+/* Element selector: base font, colours and readable line height */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;           /* rem units respect the user's browser font size */
+    line-height: 1.6;
+    color: #1f2a24;
+    background-color: #f5f8f6;
+}
+
+/* Images never overflow their container on small screens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ---------------------------------------------------------------------
+   3. Accessibility helpers
+   --------------------------------------------------------------------- */
+
+/* Skip link: hidden off-screen until a keyboard user tabs to it */
+.skip-link {
+    position: absolute;
+    top: -60px;
+    left: 16px;
+    z-index: 100;
+    padding: 10px 16px;
+    color: #ffffff;
+    background-color: #163f24;
+    font-weight: bold;
+}
+
+/* Pseudo-class: show the skip link when it receives keyboard focus */
+.skip-link:focus {
+    top: 16px;
+}
+
+/* Pseudo-class: clear, high-contrast focus ring for keyboard users */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #a4de02;
+    outline-offset: 2px;
+}
+
+/* Hides text visually but keeps it available to screen readers */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+
+/* ---------------------------------------------------------------------
+   4. Header and navigation (shared across all pages)
+   --------------------------------------------------------------------- */
+
+/* Flexbox lays the site name and menu out in one horizontal bar */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 32px;
+    background-color: #1e5631;
+}
+
+/* Child combinator: only the h1 directly inside the header */
+header > h1 {
+    margin: 0;
+    padding: 18px 0;
+    font-size: 1.4em;
+    color: #ffffff;
+}
+
+/* Descendant selector: the list inside the header's nav */
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav li a {
+    display: block;
+    padding: 22px 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 4px solid transparent;
+}
+
+/* Grouped pseudo-classes: same highlight for mouse hover and keyboard focus */
+header nav li a:hover,
+header nav li a:focus {
+    background-color: #2e7d46;
+    border-bottom-color: #a4de02;
+}
+
+/* Class selector: marks the page the visitor is currently on */
+header nav li a.active {
+    border-bottom-color: #a4de02;
+}
+
+
+/* ---------------------------------------------------------------------
+   5. Main content (shared)
+   --------------------------------------------------------------------- */
+
+/* ID selector: the main content area, also the skip link's target */
+#main {
+    max-width: 1100px;
+    min-height: 300px;
+    margin: 0 auto;
+    padding: 40px 32px;
+}
+
+/* Grouped selector: all headings inside main share the brand colour */
+main h2,
+main h3,
+main h4 {
+    color: #1e5631;
+}
+
+main section {
+    margin-bottom: 32px;
+}
+
+
+/* ---------------------------------------------------------------------
+   6. Footer (shared)
+   --------------------------------------------------------------------- */
+
+footer {
+    padding: 24px 32px;
+    text-align: center;
+    color: #dfeee4;
+    background-color: #163f24;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0 12px;
+    padding: 0;
+    list-style: none;
+}
+
+footer nav li a {
+    padding: 0 14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer nav li a:hover {
+    text-decoration: underline;
+}
+
+/* Attribute selector: email links in the footer stand out in lime */
+footer a[href^="mailto:"] {
+    color: #a4de02;
+}
+
+footer p {
+    margin: 6px 0;
+    font-size: 0.9em;
+}
+
+
+/* ---------------------------------------------------------------------
+   7. About Us page
+   --------------------------------------------------------------------- */
+
+/* Group introduction: logo beside the text, using Flexbox */
+.group-intro {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.group-logo {
+    flex: 0 0 200px;
+    margin: 0;
+    text-align: center;
+}
+
+.group-logo img {
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.group-logo figcaption {
+    font-size: 0.85em;
+    color: #4a5a50;
+}
+
+/* Project at a glance: four stat boxes in a responsive grid */
+.team-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.team-stats li {
+    padding: 16px;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 4px solid #1e5631;
+    border-radius: 4px;
+}
+
+/* Child combinator: the big number inside each stat box */
+.team-stats li > strong {
+    display: block;
+    font-size: 2em;
+    line-height: 1.2;
+    color: #1e5631;
+}
+
+/* Group details list */
+.group-info dt {
+    font-weight: bold;
+}
+
+.group-info dd {
+    margin: 0 0 8px 0;
+}
+
+/* Members table: centred, and scrolls sideways on narrow screens */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.members-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+/* Grouped descendant selectors: cell padding and borders */
+.members-table th,
+.members-table td {
+    padding: 8px 12px;
+    border: 1px solid #b7cfc0;
+    text-align: left;
+}
+
+/* Attribute selector: column headings only (row headings stay plain) */
+.members-table th[scope="col"] {
+    color: #ffffff;
+    background-color: #1e5631;
+}
+
+.members-table code {
+    font-size: 0.9em;
+}
+
+/* Structural pseudo-class: stripe every second row for readability */
+.members-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Table caption, read out by screen readers */
+.members-table caption {
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+/* Meet the Team: CSS Grid places cards in as many columns as fit */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.team-card {
+    padding: 16px 20px;
+    background-color: #ffffff;
+    border-left: 4px solid #a4de02;
+    border-radius: 4px;
+}
+
+.team-card h4 {
+    margin: 0 0 8px;
+}
+
+/* Adjacent sibling combinator: the paragraph straight after a card heading */
+.team-card h4 + p {
+    margin: 0;
+}
+
+/* Pseudo-element: a star before the team leader's name */
+.team-card.leader h4::before {
+    content: "\2605  ";        /* star character */
+    color: #2e7d46;
+}
+
+/* Pseudo-class: lift a card slightly on hover */
+.team-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Initial badge for each member, in place of a photo */
+.avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2e7d46;
+}
+
+/* The team leader's badge is the darker brand green */
+.leader .avatar {
+    background-color: #1e5631;
+}
+
+/* Teamwork steps: numbered list with green numbers */
+.workflow li {
+    margin-bottom: 8px;
+}
+
+.workflow li::marker {
+    font-weight: bold;
+    color: #1e5631;
+}
+
+/* Mission quote */
+.mission {
+    margin: 0;
+    padding: 16px 24px;
+    font-size: 1.15em;
+    background-color: #ffffff;
+    border-left: 6px solid #1e5631;
+}
+
+.mission p {
+    margin: 0;
+}
+
+/* Pseudo-class: visited links in the page content stay on-brand */
+main a:visited {
+    color: #1e5631;
+}
+
+
+/* ---------------------------------------------------------------------
+   8. Responsive layout
+   --------------------------------------------------------------------- */
+
+/* Tablets and small laptops */
+@media (max-width: 900px) {
+    header {
+        padding: 0 20px;
+    }
+
+    header nav li a {
+        padding: 18px 12px;
+    }
+
+    #main {
+        padding: 32px 20px;
+    }
+}
+
+/* Phones: stack the header and centre the menu */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 16px;
+    }
+
+    header nav ul {
+        width: 100%;
+    }
+
+    header nav li a {
+        padding: 12px 10px;
+        border-bottom-width: 3px;
+    }
+
+    #main {
+        padding: 24px 16px;
+    }
+
+    /* Stack the logo above the group text */
+    .group-intro {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .group-logo {
+        flex-basis: auto;
+    }
+
+    .members-table th,
+    .members-table td {
+        padding: 6px 8px;
+        font-size: 0.9em;
+    }
+}
+
+
+/* ---------------------------------------------------------------------
+   9. Accessibility media queries
+   --------------------------------------------------------------------- */
+
+/* Respect users who ask their system for less motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Windows high-contrast / forced-colours mode: keep borders visible */
+@media (forced-colors: active) {
+    .team-card,
+    .members-table th,
+    .members-table td {
+        border: 1px solid CanvasText;
+    }
+}
