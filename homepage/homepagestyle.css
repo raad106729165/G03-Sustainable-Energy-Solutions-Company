@@ -66,7 +66,7 @@ h1 {color:rgb(228, 246, 228);
   hyphens: none;
   font-family:Arial, Helvetica, sans-serif;
   background-color:none;
-font-weight: bold;}
+  font-weight: bold;}
 
 #intro-text {
   color: #ffffff;
@@ -101,7 +101,7 @@ section {
   margin: 1.5rem auto;
 }
 /*Join Our Team*/
-.join, .join h4 {
+.join {
   text-align: center; max-width: none;}
 html { 
   scroll-behavior: smooth; }
@@ -193,7 +193,7 @@ table tr:last-child td {
 /*Paragraphs are aligned*/
 p {
   text-align: center;
-  hyphens: auto;
+  hyphens: none;
   max-width: 800px;
   margin: 1.2em auto;   /* auto left/right = centered block */}
 
