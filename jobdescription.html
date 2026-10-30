@@ -1,84 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Explore career opportunities at Evergreen Energy Sustainable Energy Solutions.">
+    <meta name="keywords" content="Evergreen Energy, renewable energy, jobs, web developer, UX UI designer">
+    <meta name="author" content="Group 3">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Current job openings at Sustainable Energy Solutions Company.">
-    <meta name="keywords" content="sustainable energy, renewable energy, solar, wind, clean energy, careers">
-    <meta name="author" content="Group G03">
-    <title>Job Descriptions | Sustainable Energy Solutions</title>
+
+    <title>Careers | Evergreen Energy Sustainable Energy Solutions</title>
+
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Embedded CSS example required by the assignment -->
+    <style>
+        .career-intro {
+            background-color: #eaf5e9;
+            padding: 20px;
+            border-left: 5px solid #287a3d;
+            margin-bottom: 25px;
+        }
+
+        .career-intro p {
+            line-height: 1.7;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>Sustainable Energy Solutions</h1>
-        <nav>
+
+    <!-- Website header -->
+    <header class="site-header">
+
+        <div class="brand">
+            <h1>Evergreen Energy Sustainable Energy Solutions</h1>
+            <p>Smarter energy for a sustainable tomorrow</p>
+        </div>
+
+        <!-- Main navigation menu -->
+        <nav aria-label="Main navigation">
             <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="jobdescription.html">Job Descriptions</a></li>
-                <li><a href="jobapplication.html">Apply</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html" aria-current="page">Jobs</a></li>
+                <li><a href="apply.html">Apply Now</a></li>
+                <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>
+
     </header>
+
+    <!-- Main page content -->
     <main>
-        <h2>Open Positions</h2>
 
-        <section>
-            <h3>Software Developer</h3>
-            <p><strong>Reference number:</strong> SE001</p>
-            <p><strong>Reports to:</strong> Head of Technology</p>
-            <p><strong>Salary range:</strong> To be confirmed</p>
-            <h4>Key Responsibilities</h4>
-            <ol>
-                <li>Build and maintain energy monitoring software.</li>
-                <li>Work with engineers to improve system performance.</li>
-                <li>Test and document code.</li>
-            </ol>
-            <h4>Requirements</h4>
-            <h5>Essential</h5>
-            <ul>
-                <li>Degree in Computer Science or a related field.</li>
-                <li>Experience with HTML, CSS and JavaScript.</li>
-            </ul>
-            <h5>Preferable</h5>
-            <ul>
-                <li>Interest in renewable energy.</li>
-            </ul>
+        <!-- Introduction -->
+        <section class="career-intro">
+
+            <h2>Build Your Career With Us</h2>
+
+            <p>
+                At Evergreen Energy Sustainable Energy Solutions, we believe
+                technology and innovation can help create a cleaner future.
+                We support sustainable energy solutions and use digital
+                technology to share information about renewable energy projects.
+            </p>
+
+            <p>
+                We are looking for talented people who want to help us build
+                accessible websites and inclusive digital experiences that
+                inform the public about clean energy and community programs.
+            </p>
+
         </section>
 
-        <section>
-            <h3>Data Analyst</h3>
-            <p><strong>Reference number:</strong> SE002</p>
-            <p><strong>Reports to:</strong> Operations Manager</p>
-            <p><strong>Salary range:</strong> To be confirmed</p>
-            <h4>Key Responsibilities</h4>
-            <ol>
-                <li>Analyse energy production and consumption data.</li>
-                <li>Prepare reports and dashboards for management.</li>
-                <li>Identify ways to improve efficiency.</li>
-            </ol>
-            <h4>Requirements</h4>
-            <h5>Essential</h5>
-            <ul>
-                <li>Degree in Data Science, Statistics or a related field.</li>
-                <li>Experience with spreadsheets and SQL.</li>
-            </ul>
-            <h5>Preferable</h5>
-            <ul>
-                <li>Experience with Python.</li>
-            </ul>
-        </section>
+        <!-- Aside: benefits and inclusive employment -->
+        <aside class="career-aside">
 
-        <aside>
-            <h3>Why Work With Us?</h3>
-            <p>Flexible hours, training support and meaningful work in clean energy.</p>
+            <h2>Why Join Us?</h2>
+
+            <ul>
+                <li>Flexible hybrid work arrangements.</li>
+                <li>Five paid volunteering days each year for environmental projects.</li>
+                <li>An annual budget for learning, training and certifications.</li>
+            </ul>
+
+            <h3>Inclusive Employment</h3>
+
+            <p>
+                We encourage applications from Aboriginal and Torres Strait
+                Islander peoples. We aim to work respectfully with First
+                Nations communities on renewable energy projects on Country
+                and value their knowledge and perspectives.
+            </p>
+
         </aside>
 
-        <p><a href="jobapplication.html">Apply for a position</a></p>
+        <!-- Job listings -->
+        <section class="job-listings">
+
+            <h2>Current Job Opportunities</h2>
+
+            <p>
+                Explore our available positions and find an opportunity
+                that matches your experience, skills and interests.
+            </p>
+
+            <!-- Job 1: Front-End Web Developer -->
+            <article class="job-card">
+
+                <h2>Front-End Web Developer</h2>
+
+                <section>
+                    <h3>Position Details</h3>
+
+                    <dl class="job-details">
+
+                        <dt>Reference Number:</dt>
+                        <dd>WD101</dd>
+
+                        <dt>Salary:</dt>
+                        <dd>AUD $85,000–$100,000 per year, plus superannuation</dd>
+
+                        <dt>Reporting Line:</dt>
+                        <dd>Head of Digital Platforms</dd>
+
+                    </dl>
+                </section>
+
+                <section>
+                    <h3>About the Role</h3>
+
+                    <p>
+                        Build and maintain our public websites so people can
+                        learn about our clean energy solutions, follow our
+                        solar and wind projects, and join community programs.
+                        You will turn designs into fast, accessible and
+                        responsive web pages.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Key Responsibilities</h3>
+
+                    <ol>
+                        <li>
+                            Build responsive web pages from design mock-ups
+                            using semantic HTML5 and CSS3.
+                        </li>
+
+                        <li>
+                            Keep project information pages up to date,
+                            including project locations, capacity and progress.
+                        </li>
+
+                        <li>
+                            Make sure pages follow WCAG 2.2 AA accessibility
+                            requirements.
+                        </li>
+
+                        <li>
+                            Improve page speed and reduce unnecessary resource
+                            use through lightweight code and optimised images.
+                        </li>
+
+                        <li>
+                            Use Git and GitHub to manage code and review
+                            teammates' work.
+                        </li>
+
+                        <li>
+                            Work with designers and the communications team
+                            on public campaigns.
+                        </li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h3>Essential Requirements</h3>
+
+                    <ul>
+                        <li>
+                            Bachelor's degree in IT, Computer Science or a
+                            related field, or equivalent experience.
+                        </li>
+
+                        <li>At least two years of front-end development experience.</li>
+
+                        <li>Strong skills in HTML5, CSS3 and responsive design.</li>
+
+                        <li>Working knowledge of web accessibility standards.</li>
+
+                        <li>Experience with Git version control.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Preferable Requirements</h3>
+
+                    <ul>
+                        <li>Experience with JavaScript frameworks such as React or Vue.</li>
+
+                        <li>Knowledge of sustainable web design practices.</li>
+
+                        <li>Experience with a content management system such as WordPress.</li>
+
+                        <li>Interest in renewable energy or climate action.</li>
+                    </ul>
+                </section>
+
+                <p class="apply-link">
+                    <a href="apply.html" class="button">
+                        Apply for Front-End Web Developer
+                    </a>
+                </p>
+
+            </article>
+
+            <!-- Job 2: UX/UI Designer -->
+            <article class="job-card">
+
+                <h2>UX/UI Designer</h2>
+
+                <section>
+                    <h3>Position Details</h3>
+
+                    <dl class="job-details">
+
+                        <dt>Reference Number:</dt>
+                        <dd>UX202</dd>
+
+                        <dt>Salary:</dt>
+                        <dd>AUD $90,000–$110,000 per year, plus superannuation</dd>
+
+                        <dt>Reporting Line:</dt>
+                        <dd>Head of Digital Platforms</dd>
+
+                    </dl>
+                </section>
+
+                <section>
+                    <h3>About the Role</h3>
+
+                    <p>
+                        Design clear, inclusive digital experiences that help
+                        the public understand clean energy and take part in
+                        community programs. You will research user needs and
+                        design layouts for our websites and engagement tools.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Key Responsibilities</h3>
+
+                    <ol>
+                        <li>
+                            Run user research and usability testing with
+                            community members and customers.
+                        </li>
+
+                        <li>
+                            Create wireframes, prototypes and final designs
+                            for web pages and online forms.
+                        </li>
+
+                        <li>
+                            Design clear visual displays of energy data,
+                            including savings calculators and project dashboards.
+                        </li>
+
+                        <li>
+                            Maintain the company design system so pages look
+                            consistent and on-brand.
+                        </li>
+
+                        <li>
+                            Design for accessibility, including colour
+                            contrast, readable text and keyboard use.
+                        </li>
+
+                        <li>
+                            Hand finished designs over to developers and
+                            support them during implementation.
+                        </li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h3>Essential Requirements</h3>
+
+                    <ul>
+                        <li>
+                            Degree in Design, Human-Computer Interaction
+                            or a related field.
+                        </li>
+
+                        <li>At least three years of UX/UI design experience.</li>
+
+                        <li>Skills in Figma or a similar design tool.</li>
+
+                        <li>A portfolio demonstrating user-centred design work.</li>
+
+                        <li>Understanding of inclusive and accessible design.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Preferable Requirements</h3>
+
+                    <ul>
+                        <li>Experience designing data visualisations.</li>
+
+                        <li>Basic knowledge of HTML and CSS.</li>
+
+                        <li>
+                            Experience with community or public-sector
+                            engagement projects.
+                        </li>
+
+                        <li>Knowledge of the renewable energy industry.</li>
+                    </ul>
+                </section>
+
+                <p class="apply-link">
+                    <a href="apply.html" class="button">
+                        Apply for UX/UI Designer
+                    </a>
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- Application instructions -->
+        <section class="application-steps">
+
+            <h2>How to Apply</h2>
+
+            <p>Follow these steps to apply for a position:</p>
+
+            <ol>
+                <li>Read the job descriptions and requirements carefully.</li>
+
+                <li>Choose the position that matches your skills and interests.</li>
+
+                <li>Write down the correct five-character reference number.</li>
+
+                <li>Open the application form and enter the job reference.</li>
+
+                <li>Check your details before submitting your application.</li>
+            </ol>
+
+            <p>
+                <a href="apply.html" class="button">Go to Application Form</a>
+            </p>
+
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 Sustainable Energy Solutions Company. Group G03, COS10026 Web Technology Project.</p>
+    <!-- Website footer -->
+    <footer class="site-footer">
+
+        <!-- Inline CSS example required by the assignment -->
+        <p style="font-size: 0.9rem; text-align: center;">
+            &copy; 2026 Evergreen Energy Sustainable Energy Solutions
+            
+        </p>
+
+        <p>
+            Group 3 | info@evergreenenergy.com
+        </p>
+
     </footer>
+
 </body>
+
 </html>
