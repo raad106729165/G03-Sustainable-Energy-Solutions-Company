@@ -9,20 +9,29 @@
     <title>Home | Sustainable Energy Solutions</title>
     <link rel="stylesheet" href="homepagestyle.css">
     <!--one internal style element-->
-    <style>.join { border-left: 6px solid #7aa602; }</style>
+    <style>.join { border-left: 6px solid #7aa602; } </style>
 </head>
 <body>
-    <!--!enable keyboard nav!--->
+    <!--!enable keyboard nav!-->
 <a href="#main" class="skip-link">Skip to main content</a>   
-<header>
- <nav>
-    <ul>
-     <li><a href="homepage.html">Home</a></li>
-     <li><a href="jobdescription.html">Job Descriptions</a></li>
-     <li><a href="jobapplication.html">Apply</a></li>
-     <li><a href="aboutus.html">About Us</a></li>
+ <!-- Shared header and navigation (designed by Marwa) -->
+  <header>
+    <nav>
+  <div class="nav-container">
+    <!-- Company Logo -->
+    <div class="nav-logo">
+        <img src="images/logo.png" width="350" alt="evergreenlogo">
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="homepage.html">Homepage</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="jobdescription.html">Jobs</a></li>
+          <li><a href="jobapplication.html">Apply</a></li>
     </ul>
- </nav>
+  </div>
+</nav>
 </header>
 <main id="main" tabindex="-1">
     <div class="search-bar">
@@ -44,13 +53,37 @@
     <p>Evergreen Energy At Sustainable Energy Solutions Company, we believe clean energy should be simple, affordable, and available to everyone. We are dedicated to helping homes, businesses, and communities move away from fossil fuels and toward renewable power.
 
 Since 2020, we have helped Australians cut their energy costs and reduce their carbon footprint with solutions like solar installation, wind power, energy-efficient upgrades, energy audits.</p>
-    <img src="images/powerplantwork.jpg" alt="Engineers gathered around a monitor reviewing solar panel designs"" class="section-img">
+    <img src="images/powerplantwork.jpg" alt="Engineers gathered around a monitor reviewing solar panel designs" class="section-img">
 </section> 
 <section>     
     <h2>What do we do?</h2>
     
 <p>We plan and deliver wind, solar and battery storage projects. Our technology team turns that work into clear, accessible websites, so communities can see what is being built, how it performs and how to have their say.</p>
 </section>
+<!-- ===== Start Done by Marwah ===== -->
+<section>
+    <h2>Our Mission & Vision</h2>
+    <p>
+        Evergreen Energy is committed to delivering clean, affordable power solutions 
+        while shaping a sustainable future for communities worldwide. 
+        Our vision is a future where renewable energy empowers every home, business, 
+        and community to thrive responsibly.
+    </p>
+</section>
+<section>
+    <h2 style="text-align:center;">Commitment to Sustainability</h2>
+    <div style="text-align:center; max-width:800px; margin:0 auto;">
+        <p>
+            At Evergreen Energy, sustainability is at the heart of everything we do. 
+            We integrate eco‑friendly practices into every project, ensuring that our 
+            solutions not only deliver reliable energy but also protect the planet for 
+            future generations. This commitment reinforces our brand identity and 
+            drives our mission to build a greener tomorrow.
+        </p>
+    </div>
+</section>
+
+<!-- ===== End Done by Marwah ===== -->
 <section>
     <h2>Our Projects</h2>
     <!---!side way scroll with keyboard-->
@@ -96,7 +129,7 @@ Since 2020, we have helped Australians cut their energy costs and reduce their c
     </table>
     </div>
 
-    <p1> Want to look at more projects like these? <a href="jobdescription.html"> Click here </a></p1> or, learn more about our team<a href="aboutus.html">Click here.</a>
+   <p id="belowtable">Want to look at more projects like these? <a href="jobdescription.html">Click here</a>, or learn more about our team <a href="aboutus.html">Click here</a>.</p>
 </section> 
 <section>
     <h2>Our Office Locations</h2>
@@ -130,21 +163,63 @@ Since 2020, we have helped Australians cut their energy costs and reduce their c
   </section>
 
   <!-- testimonials -->
-   <!--arialabel helpful for screen readers--->
+   <!--arialabel helpful for screen readers-->
   <aside class="testimonial" aria-labelledby="testimonial-heading">
   <h2 id="testimonial-heading">What Our Team Says</h2>
+  <figure>
   <blockquote>
     <p>“It feels good to go to work knowing my code helps people see and understand clean energy projects in their community."</p>
-    <footer><cite>Raza Waqas, Software Developer</cite></footer>
+    <figcaption><strong>Raza Waqas, Software Developer</strong></figcaption>
   </blockquote>
+  </figure>
   </aside>
 </div>
 <section>
     <!---inline style element-->
-    <strong><p style="font-style: italic; color: #155b36;">We acknowledge the Traditional Custodians of the lands on which we work and live, and pay our respects to Elders past and present. Sovereignty was never ceded.</p></strong>
+    <p style="font-style: italic; color: #155b36;"><strong>  We acknowledge the Traditional Custodians of the lands on which we work and live, and pay our respects to Elders past and present. Sovereignty was never ceded.</strong></p>
+  
     
 </section>
 
+<!-- ===== Footer by Marwah ===== -->
+   <footer>
+  <div class="footer-container">
+    <!-- Left Section: Logo and Motto -->
+    <div class="footer-left">
+      <img src="images/evergreen White .png" alt="Evergreen Energy Logo" class="footer-logo">
+      <p class="footer-motto">
+        At Evergreen Energy, we are committed to delivering eco-friendly solutions that harness the power of wind, solar, and water. 
+        Our mission is to create sustainable energy systems that protect the planet while empowering communities through helping them 
+        participate in our action and help them become more empowered individuals.
+      </p>
+      <p class="footer-copy">&copy; 2026 Evergreen Energy | Building a greener tomorrow</p>
+    </div>
+
+    <!-- Right Section: Table with Quick Links and Contact Us -->
+    <div class="footer-right">
+      <table class="footer-table">
+        <tr>
+          <th>Quick Links</th>
+          <th>Contact Us</th>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/raad106729165/G03-Sustainable-Energy-Solutions-Company.git">GitHub</a></td>
+          <td>📧 <a href="mailto:info@evergreenenergy.com">info@evergreenenergy.com</a></td>
+        </tr>
+        <tr>
+          <td><a href="https://dragqon.atlassian.net/jira/software/projects/G03/boards/4/backlog?atlOrigin=eyJpIjoiZjEwNzQ1ZTM3ZDIyNGIyYTkwNmRhODJiN2VmNmYzNjUiLCJwIjoiaiJ9">Jira</a></td>
+          <td>📬 <a href="mailto:support@evergreenenergy.com">support@evergreenenergy.com</a></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>📞 <a href="tel:+97423400432">+974 23400432</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
 
 
 </main>

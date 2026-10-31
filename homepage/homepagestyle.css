@@ -3,6 +3,55 @@ author: Redha Waseem
 created:16/10/2026
 description: homepage.html
 */
+/* ===== Horizontal top bar ===== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 32px;
+    background-color: #1e5631;
+}
+
+header h1 {
+    margin: 0;
+    padding: 18px 0;
+    font-size: 1.4em;
+    color: #ffffff;
+}
+
+header nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav li a {
+    display: block;
+    padding: 22px 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 4px solid transparent;
+}
+
+header nav li a:hover,
+header nav li a:focus {
+    background-color: #2e7d46;
+    border-bottom-color: #a4de02;
+}
+
+header nav li a.active {
+    border-bottom-color: #a4de02;
+}
+
+/* ===== Main placeholder ===== */
+main {
+    min-height: 300px;
+    padding: 40px 32px;
+}
+
 /*skip link and focus*/
 .skip-link {
   position: absolute;
@@ -65,7 +114,6 @@ h1 {color:rgb(228, 246, 228);
   text-align: left;
   hyphens: none;
   font-family:Arial, Helvetica, sans-serif;
-  background-color:none;
   font-weight: bold;}
 
 #intro-text {
@@ -310,10 +358,42 @@ main aside {
     padding: 12px;
     border: 2px solid #a4de02;}
 
-/* Keep the footer below the floated aside */
+/* ===== Footer ===== */
 footer {
-    clear: both;
+    padding: 24px 32px;
+    text-align: center;
+    color: #dfeee4;
+    background-color: #163f24;
 }
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0 12px;
+    padding: 0;
+    list-style: none;
+}
+
+footer nav li a {
+    padding: 0 14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer nav li a:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    color: #a4de02;
+}
+
+footer p {
+    margin: 6px 0;
+    font-size: 0.9em;
+}
+
 /* Tablet and phone: stack the offices, shrink the hero */
 /* ---------- Tablet and phone ---------- */
 @media (max-width: 800px) {
