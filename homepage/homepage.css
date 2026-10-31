@@ -46,6 +46,32 @@ header nav li a.active {
     border-bottom-color: #a4de02;
 }
 
+/* Logo on the left, links on the right */
+header nav {
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/* Keep the logo small */
+.nav-logo img {
+    height: 60px;
+    width: auto;
+    margin: 8px 0;
+    border-radius: 6px;
+}
+
+/* Stop a:visited turning the nav links green */
+header nav li a:visited {
+    color: #ffffff;
+}
+
 /* ===== Main placeholder ===== */
 main {
     min-height: 300px;
@@ -166,7 +192,7 @@ body {
   box-sizing: border-box;
   border-radius: 10px;
   background:linear-gradient(rgba(10, 40, 20, 0.45), rgba(10, 40, 20, 0.25)),
-  url("Images/hero_content.jpg") center 70% / cover no-repeat;}
+  url("images/hero_content.jpg") center 70% / cover no-repeat;}
 
 .apply {
   display: inline-block;
@@ -394,6 +420,61 @@ footer p {
     font-size: 0.9em;
 }
 
+/* Logo and motto on the left, links table on the right */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-left p {
+    max-width: none;
+    text-align: left;
+}
+
+/* Keep the footer logo small */
+.footer-logo {
+    height: 60px;
+    width: auto;
+    margin: 0 0 12px;
+}
+
+/* Undo the projects table styling for the footer table */
+.footer-table {
+    width: auto;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+}
+
+.footer-table th,
+.footer-table td {
+    padding: 6px 16px;
+    border-bottom: none;
+    background: none;
+    color: #dfeee4;
+}
+
+.footer-table tr:first-child th {
+    background: none;
+    color: #ffffff;
+    font-size: 1em;
+    text-align: left;
+}
+
+footer a:visited {
+    color: #a4de02;
+}
+
 /* Tablet and phone: stack the offices, shrink the hero */
 /* ---------- Tablet and phone ---------- */
 @media (max-width: 800px) {
@@ -401,4 +482,5 @@ footer p {
   .offices { flex-direction: column; }
   .hero-content { padding: 40px 24px; min-height: 340px; }
   h1 { font-size: 2.2em; }
+  .footer-container { flex-direction: column; }
 }
