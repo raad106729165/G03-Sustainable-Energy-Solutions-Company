@@ -8,31 +8,27 @@
     <meta name="author" content="Group G03">
     <title>Home | Sustainable Energy Solutions</title>
     <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="layout.css">
     <!--one internal style element-->
     <style>.join { border-left: 6px solid #7aa602; } </style>
 </head>
 <body>
-    <!--!enable keyboard nav!-->
-<a href="#main" class="skip-link">Skip to main content</a>   
- <!-- Shared header and navigation (designed by Marwa) -->
-  <header>
-    <nav>
-  <div class="nav-container">
-    <!-- Company Logo -->
-    <div class="nav-logo">
-        <img src="images/logo.png" width="350" alt="evergreenlogo">
-    </div>
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-    <!-- Navigation Links -->
-    <ul class="nav-links">
-      <li><a href="homepage.html">Homepage</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="jobdescription.html">Jobs</a></li>
-          <li><a href="jobapplication.html">Apply</a></li>
-    </ul>
-  </div>
-</nav>
-</header>
+    <!-- ===== Shared header and navigation (designed by Marwah) ===== -->
+    <header id="site-header">
+        <nav class="nav-container" aria-label="Main navigation">
+            <a href="homepage.html" class="nav-logo">
+                <img src="images/evergreen-coloured.png" alt="Evergreen Energy home">
+            </a>
+            <ul class="nav-links">
+                <li><a href="homepage.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="jobdescription.html">Job Description</a></li>
+                <li><a href="jobapplication.html">Apply</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
 <main id="main" tabindex="-1">
     <div class="search-bar">
     <form action="#" method="get" role="search">
@@ -55,21 +51,33 @@
 Since 2020, we have helped Australians cut their energy costs and reduce their carbon footprint with solutions like solar installation, wind power, energy-efficient upgrades, energy audits.</p>
     <img src="images/powerplantwork.jpg" alt="Engineers gathered around a monitor reviewing solar panel designs" class="section-img">
 </section> 
-<section>     
-    <h2>What do we do?</h2>
-    
-<p>We plan and deliver wind, solar and battery storage projects. Our technology team turns that work into clear, accessible websites, so communities can see what is being built, how it performs and how to have their say.</p>
-</section>
-<!-- ===== Start Done by Marwah ===== -->
 <section>
-    <h2>Our Mission & Vision</h2>
-    <p>
-        Evergreen Energy is committed to delivering clean, affordable power solutions 
-        while shaping a sustainable future for communities worldwide. 
-        Our vision is a future where renewable energy empowers every home, business, 
-        and community to thrive responsibly.
+    <h2 style="text-align:center;">Our Mission & Vision</h2>
+    <p style="text-align:left;">
+        At Evergreen Energy, our mission is to make renewable power the foundation of everyday life. 
+        We are driven by the belief that clean energy should not be a luxury, but a right accessible 
+        to all households, businesses, and communities. Our vision is a future where fossil fuels are 
+        replaced by sustainable solutions that empower people to live affordably, responsibly, and 
+        in harmony with the environment. By combining innovation with integrity, we aim to lead the 
+        transition toward a greener world, ensuring that every project we deliver contributes to 
+        reducing carbon emissions and building a resilient energy future for generations to come.
     </p>
 </section>
+
+<section>
+    <h2 style="text-align:center;">What Do We Do?</h2>
+    <p style="text-align:left;">
+        We provide practical, cost‑effective solutions that help Australians embrace renewable energy 
+        and reduce their dependence on fossil fuels. Since 2020, our team has worked alongside 
+        homeowners, businesses, and community groups to design and implement projects that deliver 
+        real impact. From solar installations and wind power systems to energy‑efficient upgrades 
+        and comprehensive energy audits, we tailor our services to meet diverse needs while lowering 
+        costs and improving sustainability. By combining technical expertise with a commitment to 
+        transparency, we make the shift to clean energy simple, affordable, and rewarding for everyone 
+        we serve.
+    </p>
+</section>
+<!-- ===== Start Done by Marwah ===== -->
 <section>
     <h2 style="text-align:center;">Commitment to Sustainability</h2>
     <div style="text-align:center; max-width:800px; margin:0 auto;">
@@ -175,6 +183,37 @@ Since 2020, we have helped Australians cut their energy costs and reduce their c
   </aside>
 </div>
 <section>
+    <h2>Our Branch Details</h2>
+<!-- Sideway scroll with keyboard -->
+<div class="table-wrap" tabindex="0" role="region" aria-label="Evergreen Energy branches table">
+  <table>
+    <tr>
+      <th colspan="3">Evergreen Energy Branches</th>
+    </tr>
+    <tr>
+      <th>Branch</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </tr>
+    <tr>
+      <td>Melbourne</td>
+      <td><a href="mailto:melbourne@evergreenenergy.com">melbourne@evergreenenergy.com</a></td>
+      <td><a href="tel:+61312345678">+61 3 1234 5678</a></td>
+    </tr>
+    <tr>
+      <td>Sydney</td>
+      <td><a href="mailto:sydney@evergreenenergy.com">sydney@evergreenenergy.com</a></td>
+      <td><a href="tel:+61223456789">+61 2 2345 6789</a></td>
+    </tr>
+    <tr>
+      <td>Brisbane</td>
+      <td><a href="mailto:brisbane@evergreenenergy.com">brisbane@evergreenenergy.com</a></td>
+      <td><a href="tel:+61734567890">+61 7 3456 7890</a></td>
+    </tr>
+  </table>
+</div>
+</section>
+<section>
     <!---inline style element-->
     <p style="font-style: italic; color: #155b36;"><strong>  We acknowledge the Traditional Custodians of the lands on which we work and live, and pay our respects to Elders past and present. Sovereignty was never ceded.</strong></p>
   
@@ -182,42 +221,47 @@ Since 2020, we have helped Australians cut their energy costs and reduce their c
 </section>
 </main>
 
-<!-- ===== Footer by Marwah ===== -->
-   <footer>
-  <div class="footer-container">
-    <!-- Left Section: Logo and Motto -->
-    <div class="footer-left">
-      <img src="images/logo.png" alt="Evergreen Energy Logo" class="footer-logo">
-      <p class="footer-motto">
-        At Evergreen Energy, we are committed to delivering eco-friendly solutions that harness the power of wind, solar, and water. 
-        Our mission is to create sustainable energy systems that protect the planet while empowering communities through helping them 
-        participate in our action and help them become more empowered individuals.
-      </p>
-      <p class="footer-copy">&copy; 2026 Evergreen Energy | Building a greener tomorrow</p>
-    </div>
+    <!-- ===== Shared footer (designed by Marwah) ===== -->
+    <footer id="site-footer">
+        <div class="footer-container">
+            <!-- Left: logo, motto and copyright -->
+            <div class="footer-left">
+                <img src="images/evergreen-white.png" alt="Evergreen Energy logo" class="footer-logo">
+                <p class="footer-motto">Sustainable energy for a greener future.</p>
+                <p class="footer-copy">&copy; 2026 Evergreen Energy | Group G03, COS10026 Web Technology Project</p>
+            </div>
 
-    <!-- Right Section: Table with Quick Links and Contact Us -->
-    <div class="footer-right">
-      <table class="footer-table">
-        <tr>
-          <th>Quick Links</th>
-          <th>Contact Us</th>
-        </tr>
-        <tr>
-          <td><a href="https://github.com/raad106729165/G03-Sustainable-Energy-Solutions-Company.git">GitHub</a></td>
-          <td>📧 <a href="mailto:info@evergreenenergy.com">info@evergreenenergy.com</a></td>
-        </tr>
-        <tr>
-          <td><a href="https://dragqon.atlassian.net/jira/software/projects/G03/boards/4/backlog?atlOrigin=eyJpIjoiZjEwNzQ1ZTM3ZDIyNGIyYTkwNmRhODJiN2VmNmYzNjUiLCJwIjoiaiJ9">Jira</a></td>
-          <td>📬 <a href="mailto:support@evergreenenergy.com">support@evergreenenergy.com</a></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>📞 <a href="tel:+97423400432">+974 23400432</a></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-</footer>
+            <!-- Right: page links, quick links and contact details -->
+            <div class="footer-right">
+                <table class="footer-table">
+                    <tr>
+                        <th scope="col">Pages</th>
+                        <th scope="col">Quick Links</th>
+                        <th scope="col">Contact Us</th>
+                    </tr>
+                    <tr>
+                        <td><a href="homepage.html">Home</a></td>
+                        <td><a href="https://github.com/raad106729165/G03-Sustainable-Energy-Solutions-Company">GitHub</a></td>
+                        <td>Email: <a href="mailto:info@evergreenenergy.com">info@evergreenenergy.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="jobdescription.html">Job Description</a></td>
+                        <td><a href="https://dragqon.atlassian.net/jira/software/projects/G03/boards/4/backlog">Jira</a></td>
+                        <td>Support: <a href="mailto:support@evergreenenergy.com">support@evergreenenergy.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="jobapplication.html">Apply</a></td>
+                        <td></td>
+                        <td>Phone: <a href="tel:+97423400432">+974 2340 0432</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="aboutus.html">About Us</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

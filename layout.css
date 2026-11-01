@@ -1,0 +1,227 @@
+/*
+    layout.css - Shared header, navigation and footer for every page
+    Design: Marwah, Group G03 (COS10026 Web Technology Project)
+    Linked on every page AFTER the page's own stylesheet, so the
+    header and footer look the same on Home, Job Description,
+    Apply and About Us.
+*/
+
+/* ===== Skip link (keyboard users) ===== */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    z-index: 1000;
+    padding: 8px 12px;
+    color: #1e5631;
+    background: #ffffff;
+}
+
+/* ===== Header and navigation ===== */
+#site-header {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0.75em 2em;
+    background-color: #1e5631;
+    border-bottom: 4px solid #a4de02;
+}
+
+#site-header .nav-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo sits on a white badge so the coloured logo stays readable */
+#site-header .nav-logo {
+    display: inline-block;
+    padding: 4px;
+    line-height: 0;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+#site-header .nav-logo img {
+    display: block;
+    width: auto;
+    height: 56px;
+    margin: 0;
+    border-radius: 4px;
+}
+
+#site-header .nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.25em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#site-header .nav-links li {
+    margin: 0;
+}
+
+#site-header .nav-links a,
+#site-header .nav-links a:visited {
+    display: block;
+    padding: 0.6em 1em;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    border-bottom: 3px solid transparent;
+    border-radius: 4px 4px 0 0;
+    transition: background-color 0.3s ease;
+}
+
+#site-header .nav-links a:hover,
+#site-header .nav-links a:focus {
+    color: #ffffff;
+    background-color: #2e7d46;
+    border-bottom-color: #a4de02;
+}
+
+/* Current page */
+#site-header .nav-links a.active {
+    color: #ffffff;
+    background-color: #2e7d46;
+    border-bottom-color: #a4de02;
+}
+
+/* ===== Footer ===== */
+#site-footer {
+    margin-top: 2em;
+    padding: 2em;
+    color: #dfeee4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: left;
+    background-color: #163f24;
+    border-top: 4px solid #a4de02;
+}
+
+#site-footer .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left: logo, motto, copyright */
+#site-footer .footer-left {
+    flex: 1 1 260px;
+}
+
+#site-footer .footer-logo {
+    display: block;
+    width: 80px;
+    height: auto;
+    margin: 0 0 0.75em;
+    border-radius: 0;
+}
+
+#site-footer p {
+    max-width: none;
+    margin: 0.4em 0;
+    color: #dfeee4;
+    font-size: 1em;
+    text-align: left;
+}
+
+#site-footer .footer-copy {
+    font-size: 0.85em;
+}
+
+/* Right: links and contact table */
+#site-footer .footer-right {
+    flex: 2 1 420px;
+    overflow-x: auto;
+}
+
+#site-footer .footer-table {
+    width: 100%;
+    margin: 0;
+    font-family: inherit;
+    background: none;
+    border: none;
+    border-collapse: collapse;
+    border-radius: 0;
+}
+
+#site-footer .footer-table th,
+#site-footer .footer-table td {
+    padding: 0.35em 1.5em 0.35em 0;
+    color: #dfeee4;
+    font-size: 1em;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+    background: none;
+    border: none;
+}
+
+#site-footer .footer-table th {
+    padding-bottom: 0.6em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#site-footer a,
+#site-footer a:visited {
+    color: #a4de02;
+    text-decoration: none;
+}
+
+#site-footer a:hover,
+#site-footer a:focus {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ===== Small screens ===== */
+@media (max-width: 700px) {
+    #site-header {
+        padding: 0.75em 1em;
+    }
+
+    #site-header .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #site-header .nav-links {
+        width: 100%;
+    }
+
+    #site-header .nav-links li {
+        flex: 1 1 45%;
+    }
+
+    #site-footer {
+        padding: 1.5em 1em;
+    }
+
+    /* Let long email addresses wrap instead of running off screen */
+    #site-footer .footer-table td:last-child {
+        overflow-wrap: anywhere;
+    }
+}
