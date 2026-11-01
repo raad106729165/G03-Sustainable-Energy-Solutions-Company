@@ -1,29 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Explore career opportunities at Evergreen Energy Sustainable Energy Solutions.">
-    <meta name="keywords" content="Evergreen Energy, renewable energy, jobs, web developer, UX UI designer">
+    <meta name="keywords" content="Evergreen Energy, jobs, renewable energy, web developer, UX/UI designer">
     <meta name="author" content="Group 3">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Careers | Evergreen Energy Sustainable Energy Solutions</title>
+    <title>Jobs | Evergreen Energy Sustainable Energy Solutions</title>
 
     <!-- External CSS stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="jobdescriptionstyle.css">
 
-    <!-- Embedded CSS example required by the assignment -->
+    <!-- Embedded CSS example -->
     <style>
         .career-intro {
-            background-color: #eaf5e9;
+            background-color: #e8f2e5;
             padding: 20px;
-            border-left: 5px solid #287a3d;
             margin-bottom: 25px;
-        }
-
-        .career-intro p {
-            line-height: 1.7;
+            border-left: 5px solid #287a3d;
         }
     </style>
 </head>
@@ -38,22 +35,21 @@
             <p>Smarter energy for a sustainable tomorrow</p>
         </div>
 
-        <!-- Main navigation menu -->
-        <nav aria-label="Main navigation">
+        <!-- Main navigation -->
+        <nav>
             <ul>
                 <li><a href="homepage.html">Home</a></li>
-                <li><a href="jobdescription.html" aria-current="page">Jobs</a></li>
+                <li><a href="jobdescription.html" class="active">Jobs</a></li>
                 <li><a href="jobapplication.html">Apply Now</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
             </ul>
         </nav>
-
     </header>
 
     <!-- Main page content -->
     <main>
 
-        <!-- Introduction -->
+        <!-- Career introduction -->
         <section class="career-intro">
 
             <h2>Build Your Career With Us</h2>
@@ -73,7 +69,7 @@
 
         </section>
 
-        <!-- Aside: benefits and inclusive employment -->
+        <!-- Additional information -->
         <aside class="career-aside">
 
             <h2>Why Join Us?</h2>
@@ -88,21 +84,21 @@
 
             <p>
                 We encourage applications from Aboriginal and Torres Strait
-                Islander peoples. We aim to work respectfully with First
-                Nations communities on renewable energy projects on Country
-                and value their knowledge and perspectives.
+                Islander peoples. We aim to work respectfully with First Nations
+                communities on renewable energy projects on Country and value
+                their knowledge and perspectives.
             </p>
 
         </aside>
 
-        <!-- Job listings -->
+        <!-- Available job opportunities -->
         <section class="job-listings">
 
             <h2>Current Job Opportunities</h2>
 
             <p>
-                Explore our available positions and find an opportunity
-                that matches your experience, skills and interests.
+                Explore our available positions and find an opportunity that
+                matches your experience, skills and interests.
             </p>
 
             <!-- Job 1: Front-End Web Developer -->
@@ -119,7 +115,7 @@
                         <dd>WD101</dd>
 
                         <dt>Salary:</dt>
-                        <dd>AUD $85,000–$100,000 per year, plus superannuation</dd>
+                        <dd>AUD $85,000 to $100,000 per year, plus superannuation</dd>
 
                         <dt>Reporting Line:</dt>
                         <dd>Head of Digital Platforms</dd>
@@ -154,8 +150,8 @@
                         </li>
 
                         <li>
-                            Make sure pages follow WCAG 2.2 AA accessibility
-                            requirements.
+                            Make sure pages follow WCAG 2.2 AA guidelines
+                            so people with disabilities can use them.
                         </li>
 
                         <li>
@@ -209,7 +205,7 @@
                 </section>
 
                 <p class="apply-link">
-                    <a href="jobapplication.html" class="button">
+                    <a class="button" href="jobapplication.html">
                         Apply for Front-End Web Developer
                     </a>
                 </p>
@@ -230,7 +226,7 @@
                         <dd>UX202</dd>
 
                         <dt>Salary:</dt>
-                        <dd>AUD $90,000–$110,000 per year, plus superannuation</dd>
+                        <dd>AUD $90,000 to $110,000 per year, plus superannuation</dd>
 
                         <dt>Reporting Line:</dt>
                         <dd>Head of Digital Platforms</dd>
@@ -289,10 +285,7 @@
                     <h3>Essential Requirements</h3>
 
                     <ul>
-                        <li>
-                            Degree in Design, Human-Computer Interaction
-                            or a related field.
-                        </li>
+                        <li>Degree in Design, Human-Computer Interaction or a related field.</li>
 
                         <li>At least three years of UX/UI design experience.</li>
 
@@ -312,17 +305,14 @@
 
                         <li>Basic knowledge of HTML and CSS.</li>
 
-                        <li>
-                            Experience with community or public-sector
-                            engagement projects.
-                        </li>
+                        <li>Experience with community or public-sector engagement projects.</li>
 
                         <li>Knowledge of the renewable energy industry.</li>
                     </ul>
                 </section>
 
                 <p class="apply-link">
-                    <a href="jobapplication.html" class="button">
+                    <a class="button" href="jobapplication.html">
                         Apply for UX/UI Designer
                     </a>
                 </p>
@@ -351,28 +341,37 @@
             </ol>
 
             <p>
-                <a href="jobapplication.html" class="button">Go to Application Form</a>
+                <a class="button" href="jobapplication.html">
+                    Go to Application Form
+                </a>
             </p>
 
         </section>
 
+        
     </main>
 
     <!-- Website footer -->
     <footer class="site-footer">
 
-        <!-- Inline CSS example required by the assignment -->
-        <p style="font-size: 0.9rem; text-align: center;">
+        <p>
             &copy; 2026 Evergreen Energy Sustainable Energy Solutions
-            
         </p>
 
         <p>
-            Group 3 | info@evergreenenergy.com
+            Group 3 |
+            <a href="mailto:info@evergreenenergy.com">
+                info@evergreenenergy.com
+            </a>
+        </p>
+
+        <!-- Inline CSS example -->
+        <p style="font-size: 0.9rem;">
+            Smarter energy for a sustainable tomorrow.
         </p>
 
     </footer>
 
 </body>
-
 </html>
+
