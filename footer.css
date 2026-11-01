@@ -1,0 +1,70 @@
+/* Footer styling */
+#site-footer {
+  background-color: #1b5e20; /* Updated background */
+  color: #fff;              /* White text */
+  padding: 2em 3em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#site-footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#site-footer .footer-left {
+  flex: 1;
+  min-width: 300px;
+  text-align: left; /* Ensures motto and copy are left aligned */
+}
+
+#site-footer .footer-logo {
+  width: 120px;
+  margin-bottom: 1em;
+}
+
+#site-footer .footer-motto {
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: #fff;
+  margin-bottom: 1em;
+  text-align: left; /* Left aligned motto */
+}
+
+#site-footer .footer-copy {
+  font-size: 0.85em;
+  color: #fff;
+  margin-top: 1em;
+  text-align: left; /* Left aligned copy */
+}
+
+#site-footer .footer-right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#site-footer .footer-table {
+  border-collapse: collapse;
+  color: #fff;
+}
+
+#site-footer .footer-table th,
+#site-footer .footer-table td {
+  padding: 0.5em 1em;
+  border: 1px solid #1b5e20; /* Same as background so borders blend */
+  text-align: left;
+}
+
+#site-footer .footer-table a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#site-footer .footer-table a:hover {
+  color: #ccc; /* Subtle hover effect */
+}

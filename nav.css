@@ -1,0 +1,52 @@
+/* Active link styling */
+.nav-links a.active {
+  background-color: #2f8f2f;   /* lighter background to highlight */
+  border-bottom: 3px solid #fff; /* underline effect */
+  color: #fff;                 /* keep text white */
+}
+
+/* Navigation Menu - Done by Marwah */
+nav {
+  background-color: #1b5e20;   /* background colour */
+  padding: 1em 2em;
+  border: 4px solid #1b5e20;   /* Added thick border */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.nav-logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 1.5em;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;                /* White text */
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 0.5em 0.8em;       /* Adds clickable area */
+  border-radius: 4px;         /* Smooth edges for hover tint */
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: #2f8f2f;     /* Greyish tint on hover */
+  color: #fff;                   /* Keep text white */
+}
