@@ -1,104 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Apply for a job at Sustainable Energy Solutions Company.">
-    <meta name="keywords" content="sustainable energy, renewable energy, solar, wind, clean energy, careers">
-    <meta name="author" content="Group G03">
-    <title>Apply | Sustainable Energy Solutions</title>
-    <link rel="stylesheet" href="jobapplicationstyle.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Apply for a job at Evergreen Energy. Complete our online application form.">
+  <meta name="keywords" content="job application, careers, apply, Evergreen Energy, renewable energy">
+  <meta name="author" content="[Your Name], [Group Name]">
+  <title>Apply | Evergreen Energy Careers</title>
+
+  <!-- External stylesheet for this page -->
+  <link rel="stylesheet" href="jobapplication.css">
+  <!-- <link rel="stylesheet" href="footer.css"> -->
+
+  <!-- Embedded CSS -->
+  <style>
+    .form-intro {
+      background-color: #eaf2ec;
+      border-left: 6px solid #2f5d3f;
+      padding: 10px;
+    }
+  </style>
+
+  
 </head>
+
 <body>
-    <header>
-        <h1>Sustainable Energy Solutions</h1>
-        <nav>
-            <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="jobdescription.html">Job Descriptions</a></li>
-                <li><a href="jobapplication.html">Apply</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Job Application Form</h2>
+  <!--<header>
+    <h1>Evergreen Energy Sustainable Energy Solutions</h1>
+    <p class="slogan">Building a cleaner and more sustainable future</p>
 
-        <form method="post" action="#">
-            <fieldset>
-                <legend>Position</legend>
-                <label for="jobref">Job reference number</label>
+     Common navigation menu: same on every page.
+         Only class="active" moves to the link of the page you are on.
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="apply.html" class="active">Apply Now</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header> --!>
+
+  <main>
+    <h2>Join Our Team</h2>
+
+    <!-- Application panel: the form scrolls inside it -->
+    <section class="apply-panel" aria-labelledby="panel-heading">
+      <div class="panel-header">
+        <h3 id="panel-heading">Job Application</h3>
+        <p>Scroll through each section, then submit.</p>
+      </div>
+
+      <form id="application-form"
+            action="https://mercury.swin.edu.au/it000000/formtest.php"
+            method="post">
+
+        <!-- Scrollable area -->
+        <div class="panel-scroll">
+
+          <!-- Inline CSS example -->
+          <p class="form-intro" style="font-weight: bold;">
+            All fields are required except "Other skills". Choose the position you are
+            applying for. You can read the details on the <a href="jobs.html">Jobs page</a>.
+          </p>
+
+          <div class="sections">
+
+            <!-- Section 1: Job details -->
+            <fieldset class="wide">
+              <legend>Position</legend>
+              <div class="field">
+                <label for="jobref">Job reference number (select a position)</label>
+                <!-- Values are the exact 5-character reference numbers from jobs.html -->
                 <select id="jobref" name="jobref" required>
-                    <option value="">Please select</option>
-                    <option value="SE001">SE001 - Software Developer</option>
-                    <option value="SE002">SE002 - Data Analyst</option>
+                  <option value="">Please select a position</option>
+                  <option value="WD101">WD101 - Front-End Web Developer</option>
+                  <option value="UX202">UX202 - UX/UI Designer</option>
+                  <option value="RE201">RE201 - Renewable Energy Project Engineer</option>
+                  <option value="DA301">DA303 - Data Analyst - Energy Systems</option>
                 </select>
+              </div>
             </fieldset>
 
+            <!-- Section 2: Personal details -->
             <fieldset>
-                <legend>Personal Details</legend>
-                <p>
-                    <label for="firstname">First name</label>
-                    <input type="text" id="firstname" name="firstname" maxlength="20" pattern="[A-Za-z]+" required>
-                </p>
-                <p>
-                    <label for="lastname">Last name</label>
-                    <input type="text" id="lastname" name="lastname" maxlength="20" pattern="[A-Za-z]+" required>
-                </p>
-                <p>
-                    <label for="dob">Date of birth</label>
-                    <input type="date" id="dob" name="dob" required>
-                </p>
-                <fieldset>
-                    <legend>Gender</legend>
-                    <input type="radio" id="female" name="gender" value="female" required>
-                    <label for="female">Female</label>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label>
-                </fieldset>
+              <legend>Personal details</legend>
+
+              <div class="field">
+                <label for="firstname">First name</label>
+                <input type="text" id="firstname" name="firstname"
+                       pattern="[A-Za-z]{1,20}" maxlength="20" required
+                       title="Letters only, maximum 20 characters">
+              </div>
+
+              <div class="field">
+                <label for="lastname">Last name</label>
+                <input type="text" id="lastname" name="lastname"
+                       pattern="[A-Za-z]{1,20}" maxlength="20" required
+                       title="Letters only, maximum 20 characters">
+              </div>
+
+              <div class="field">
+                <label for="dob">Date of birth</label>
+                <input type="text" id="dob" name="dob"
+                       pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}"
+                       placeholder="dd/mm/yyyy" maxlength="10" required
+                       title="Use the format dd/mm/yyyy">
+              </div>
+
+              <fieldset class="radio-group">
+                <legend>Gender</legend>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="undisclosed"> Prefer not to say</label>
+              </fieldset>
             </fieldset>
 
+            <!-- Section 3: Address and contact -->
             <fieldset>
-                <legend>Contact Details</legend>
-                <p>
-                    <label for="address">Street address</label>
-                    <input type="text" id="address" name="address" maxlength="40" required>
-                </p>
-                <p>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </p>
-                <p>
-                    <label for="phone">Phone number</label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9 ]{8,12}" required>
-                </p>
+              <legend>Address and contact</legend>
+
+              <div class="field">
+                <label for="street">Street address</label>
+                <input type="text" id="street" name="street" maxlength="40" required>
+              </div>
+
+              <div class="field">
+                <label for="suburb">Suburb/Town</label>
+                <input type="text" id="suburb" name="suburb" maxlength="40" required>
+              </div>
+
+              <div class="field">
+                <label for="state">State</label>
+                <select id="state" name="state" required>
+                  <option value="">Please select</option>
+                  <option value="VIC">VIC</option>
+                  <option value="NSW">NSW</option>
+                  <option value="QLD">QLD</option>
+                  <option value="NT">NT</option>
+                  <option value="WA">WA</option>
+                  <option value="SA">SA</option>
+                  <option value="TAS">TAS</option>
+                  <option value="ACT">ACT</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="postcode">Postcode</label>
+                <input type="text" id="postcode" name="postcode"
+                       pattern="[0-9]{4}" maxlength="4" required
+                       title="Exactly 4 digits">
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone"
+                       pattern="[0-9]{8,12}" maxlength="12" required
+                       title="8 to 12 digits, no spaces">
+              </div>
             </fieldset>
 
-            <fieldset>
-                <legend>Skills</legend>
-                <input type="checkbox" id="html" name="skills[]" value="html" checked>
-                <label for="html">HTML/CSS</label>
-                <input type="checkbox" id="js" name="skills[]" value="javascript">
-                <label for="js">JavaScript</label>
-                <input type="checkbox" id="sql" name="skills[]" value="sql">
-                <label for="sql">SQL</label>
-                <input type="checkbox" id="python" name="skills[]" value="python">
-                <label for="python">Python</label>
-                <p>
-                    <label for="otherskills">Other skills</label><br>
-                    <textarea id="otherskills" name="otherskills" rows="4" cols="40"></textarea>
-                </p>
+            <!-- Section 4: Skills -->
+            <fieldset class="wide skills">
+              <legend>Skills</legend>
+
+              <label><input type="checkbox" name="skills[]" value="html5"> HTML5</label>
+              <label><input type="checkbox" name="skills[]" value="css3"> CSS3</label>
+              <label><input type="checkbox" name="skills[]" value="accessibility"> Accessibility</label>
+              <label><input type="checkbox" name="skills[]" value="git"> Git/GitHub</label>
+              <label><input type="checkbox" name="skills[]" value="teamwork"> Teamwork</label>
+
+              <div class="field">
+                <label for="otherskills">Other skills</label>
+                <textarea id="otherskills" name="otherskills" rows="5" cols="40"
+                          placeholder="Tell us about any other relevant skills"></textarea>
+              </div>
             </fieldset>
+          </div>
+        </div>
 
-            <p>
-                <input type="submit" value="Apply">
-                <input type="reset" value="Reset">
-            </p>
-        </form>
-    </main>
+        <!-- Buttons stay visible at the bottom of the panel -->
+        <div class="form-buttons">
+          <button type="submit">Submit application</button>
+          <button type="reset">Clear form</button>
+        </div>
+      </form>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Sustainable Energy Solutions Company. Group G03, COS10026 Web Technology Project.</p>
-    </footer>
+    <!--<section class="inclusion" aria-labelledby="inclusion-heading">
+      <h2 id="inclusion-heading">Our commitment to inclusion</h2>
+      <p>Evergreen Energy encourages applications from all backgrounds.</p>
+    </section>
+  </main>
+
+  <!-- Footer 
+  <footer>
+    <ul>
+      <li><a href="https://yourteam.atlassian.net/jira/software/projects/KEY/boards/1">Jira project</a></li>
+      <li><a href="https://github.com/your-username/your-repo">GitHub repository</a></li>
+      <li><a href="mailto:info@evergreenenergy.com">info@evergreenenergy.com</a></li>
+    </ul>
+    <p>&copy; 2026 Evergreen Energy</p>
+  </footer> -->
 </body>
-</html>
+</html> 
