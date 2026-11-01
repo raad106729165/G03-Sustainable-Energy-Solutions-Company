@@ -7,52 +7,217 @@
     <meta name="keywords" content="sustainable energy, renewable energy, solar, wind, clean energy, careers">
     <meta name="author" content="Group G03">
     <title>Home | Sustainable Energy Solutions</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="homepage.css">
+    <!--one internal style element-->
+    <style>.join { border-left: 6px solid #7aa602; } </style>
 </head>
 <body>
-    <header>
-        <h1>Sustainable Energy Solutions</h1>
-        <nav>
-            <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="jobdescription.html">Job Descriptions</a></li>
-                <li><a href="jobapplication.html">Apply</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Powering a Cleaner Future</h2>
-            <p>We design, build and maintain renewable energy systems for homes, businesses and communities.</p>
-            <a href="jobdescription.html">View open positions</a>
-        </section>
+    <!--!enable keyboard nav!-->
+<a href="#main" class="skip-link">Skip to main content</a>   
+ <!-- Shared header and navigation (designed by Marwa) -->
+  <header>
+    <nav>
+  <div class="nav-container">
+    <!-- Company Logo -->
+    <div class="nav-logo">
+        <img src="images/logo.png" width="350" alt="evergreenlogo">
+    </div>
 
-        <section>
-            <h2>Our Solutions</h2>
-            <article>
-                <h3>Solar Energy</h3>
-                <p>Rooftop and utility-scale solar installations.</p>
-            </article>
-            <article>
-                <h3>Wind Energy</h3>
-                <p>Onshore wind projects for reliable, low-carbon power.</p>
-            </article>
-            <article>
-                <h3>Energy Storage</h3>
-                <p>Battery systems that store clean energy for when it is needed.</p>
-            </article>
-        </section>
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="homepage.html">Homepage</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="jobdescription.html">Jobs</a></li>
+          <li><a href="jobapplication.html">Apply</a></li>
+    </ul>
+  </div>
+</nav>
+</header>
+<main id="main" tabindex="-1">
+    <div class="search-bar">
+    <form action="#" method="get" role="search">
+    <input type="search" name="q" placeholder="Search..." aria-label="Search">
+    <button type="submit">Search</button>
+  </form>
+</div>
+<section class="hero">
+    <div class="hero-content">
+     <h1>Power of Clean Energy</h1>
+      <p id="intro-text">Smarter energy for a sustainable tomorrow.</p>
+      <a href="aboutus.html" class="apply">About Us</a>
+    </div>
+</section>
 
-        <section>
-            <h2>Join Our Tech Team</h2>
-            <p>We are growing our technology team. Explore our roles and apply today.</p>
-            <a href="jobapplication.html">Apply now</a>
-        </section>
-    </main>
+<section>
+    <h2>Who are we?</h2>
+    <p>Evergreen Energy At Sustainable Energy Solutions Company, we believe clean energy should be simple, affordable, and available to everyone. We are dedicated to helping homes, businesses, and communities move away from fossil fuels and toward renewable power.
 
-    <footer>
-        <p>&copy; 2026 Sustainable Energy Solutions Company. Group G03, COS10026 Web Technology Project.</p>
-    </footer>
+Since 2020, we have helped Australians cut their energy costs and reduce their carbon footprint with solutions like solar installation, wind power, energy-efficient upgrades, energy audits.</p>
+    <img src="images/powerplantwork.jpg" alt="Engineers gathered around a monitor reviewing solar panel designs" class="section-img">
+</section> 
+<section>     
+    <h2>What do we do?</h2>
+    
+<p>We plan and deliver wind, solar and battery storage projects. Our technology team turns that work into clear, accessible websites, so communities can see what is being built, how it performs and how to have their say.</p>
+</section>
+<!-- ===== Start Done by Marwah ===== -->
+<section>
+    <h2>Our Mission & Vision</h2>
+    <p>
+        Evergreen Energy is committed to delivering clean, affordable power solutions 
+        while shaping a sustainable future for communities worldwide. 
+        Our vision is a future where renewable energy empowers every home, business, 
+        and community to thrive responsibly.
+    </p>
+</section>
+<section>
+    <h2 style="text-align:center;">Commitment to Sustainability</h2>
+    <div style="text-align:center; max-width:800px; margin:0 auto;">
+        <p>
+            At Evergreen Energy, sustainability is at the heart of everything we do. 
+            We integrate eco‑friendly practices into every project, ensuring that our 
+            solutions not only deliver reliable energy but also protect the planet for 
+            future generations. This commitment reinforces our brand identity and 
+            drives our mission to build a greener tomorrow.
+        </p>
+    </div>
+</section>
+
+<!-- ===== End Done by Marwah ===== -->
+<section>
+    <h2>Our Projects</h2>
+    <!---!side way scroll with keyboard-->
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Evergreen Energy projects table">
+    <table>
+        <tr>
+        <th colspan="4">Evergreen Energy Projects</th>
+        </tr>
+        <tr>
+            <th>Energy Type</th>
+            <th>Project</th>
+            <th>Location</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+        <td rowspan="2">Solar</td>
+            <td>Greenfield Solar Farm</td>
+            <td>Queensland</td>
+            <td>In Progress</td>
+        </tr>
+        <tr>
+            <td>Sunrise Rooftop Program</td>
+            <td>Victoria</td>
+            <td>In Progress </td>
+        </tr>
+        <tr>
+            <td rowspan="2">Wind</td>
+            <td>Coastal Wind Farm</td>
+            <td>Victoria</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>Highland Wind Project</td>
+            <td>Queensland</td>
+            <td>In Progress</td>
+        </tr>
+        <tr>
+            <td>Battery Storage</td>
+            <td>Metropolitan Battery Project</td>
+            <td>New South Wales</td>
+            <td>Planned</td>
+        </tr>
+    </table>
+    </div>
+
+   <p id="belowtable">Want to look at more projects like these? <a href="jobdescription.html">Click here</a>, or learn more about our team <a href="aboutus.html">Click here</a>.</p>
+</section> 
+<section>
+    <h2>Our Office Locations</h2>
+    <ul class="offices">
+        <li>
+            <img src="images/brisbane.jpg" alt="Brisbane city skyline" class="office-img">
+            <strong>Brisbane</strong>
+            <span>Queensland Office</span>
+        </li>
+        <li>
+            <img src="images/melbourne.jpg" alt="Melbourne city skyline" class="office-img">
+            <strong>Melbourne</strong>
+            <span>Victoria Office</span>
+        </li>
+        <li>
+            <img src="images/Sydney.jpg" alt="Sydney Opera House and harbour" class="office-img">
+            <strong>Sydney</strong>
+            <span>New South Wales Office</span>
+        </li>
+    </ul>
+
+</section> 
+
+<div class="join-row">
+
+  <!-- your existing Join Our Tech Team section -->
+  <section class="join">
+    <h2>Join Our Tech Team</h2>
+    <p>We are growing our technology team. Explore our roles and apply today.</p>
+    <a class="apply" href="jobapplication.html" >Apply now</a>
+  </section>
+
+  <!-- testimonials -->
+   <!--arialabel helpful for screen readers-->
+  <aside class="testimonial" aria-labelledby="testimonial-heading">
+  <h2 id="testimonial-heading">What Our Team Says</h2>
+  <figure>
+  <blockquote>
+    <p>“It feels good to go to work knowing my code helps people see and understand clean energy projects in their community."</p>
+    <figcaption><strong>Raza Waqas, Software Developer</strong></figcaption>
+  </blockquote>
+  </figure>
+  </aside>
+</div>
+<section>
+    <!---inline style element-->
+    <p style="font-style: italic; color: #155b36;"><strong>  We acknowledge the Traditional Custodians of the lands on which we work and live, and pay our respects to Elders past and present. Sovereignty was never ceded.</strong></p>
+  
+
+</section>
+</main>
+
+<!-- ===== Footer by Marwah ===== -->
+   <footer>
+  <div class="footer-container">
+    <!-- Left Section: Logo and Motto -->
+    <div class="footer-left">
+      <img src="images/logo.png" alt="Evergreen Energy Logo" class="footer-logo">
+      <p class="footer-motto">
+        At Evergreen Energy, we are committed to delivering eco-friendly solutions that harness the power of wind, solar, and water. 
+        Our mission is to create sustainable energy systems that protect the planet while empowering communities through helping them 
+        participate in our action and help them become more empowered individuals.
+      </p>
+      <p class="footer-copy">&copy; 2026 Evergreen Energy | Building a greener tomorrow</p>
+    </div>
+
+    <!-- Right Section: Table with Quick Links and Contact Us -->
+    <div class="footer-right">
+      <table class="footer-table">
+        <tr>
+          <th>Quick Links</th>
+          <th>Contact Us</th>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/raad106729165/G03-Sustainable-Energy-Solutions-Company.git">GitHub</a></td>
+          <td>📧 <a href="mailto:info@evergreenenergy.com">info@evergreenenergy.com</a></td>
+        </tr>
+        <tr>
+          <td><a href="https://dragqon.atlassian.net/jira/software/projects/G03/boards/4/backlog?atlOrigin=eyJpIjoiZjEwNzQ1ZTM3ZDIyNGIyYTkwNmRhODJiN2VmNmYzNjUiLCJwIjoiaiJ9">Jira</a></td>
+          <td>📬 <a href="mailto:support@evergreenenergy.com">support@evergreenenergy.com</a></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>📞 <a href="tel:+97423400432">+974 23400432</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
