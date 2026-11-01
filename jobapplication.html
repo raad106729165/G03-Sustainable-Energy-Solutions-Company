@@ -8,20 +8,26 @@
     <meta name="author" content="Group G03">
     <title>Apply | Sustainable Energy Solutions</title>
     <link rel="stylesheet" href="jobapplicationstyle.css">
+    <link rel="stylesheet" href="layout.css">
 </head>
 <body>
-    <header>
-        <h1>Sustainable Energy Solutions</h1>
-        <nav>
-            <ul>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- ===== Shared header and navigation (designed by Marwah) ===== -->
+    <header id="site-header">
+        <nav class="nav-container" aria-label="Main navigation">
+            <a href="homepage.html" class="nav-logo">
+                <img src="images/evergreen-coloured.png" alt="Evergreen Energy home">
+            </a>
+            <ul class="nav-links">
                 <li><a href="homepage.html">Home</a></li>
-                <li><a href="jobdescription.html">Job Descriptions</a></li>
-                <li><a href="jobapplication.html">Apply</a></li>
+                <li><a href="jobdescription.html">Job Description</a></li>
+                <li><a href="jobapplication.html" class="active" aria-current="page">Apply</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="main">
         <h2>Job Application Form</h2>
 
         <form method="post" action="#">
@@ -97,8 +103,47 @@
         </form>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Sustainable Energy Solutions Company. Group G03, COS10026 Web Technology Project.</p>
+    <!-- ===== Shared footer (designed by Marwah) ===== -->
+    <footer id="site-footer">
+        <div class="footer-container">
+            <!-- Left: logo, motto and copyright -->
+            <div class="footer-left">
+                <img src="images/evergreen-white.png" alt="Evergreen Energy logo" class="footer-logo">
+                <p class="footer-motto">Sustainable energy for a greener future.</p>
+                <p class="footer-copy">&copy; 2026 Evergreen Energy | Group G03, COS10026 Web Technology Project</p>
+            </div>
+
+            <!-- Right: page links, quick links and contact details -->
+            <div class="footer-right">
+                <table class="footer-table">
+                    <tr>
+                        <th scope="col">Pages</th>
+                        <th scope="col">Quick Links</th>
+                        <th scope="col">Contact Us</th>
+                    </tr>
+                    <tr>
+                        <td><a href="homepage.html">Home</a></td>
+                        <td><a href="https://github.com/raad106729165/G03-Sustainable-Energy-Solutions-Company">GitHub</a></td>
+                        <td>Email: <a href="mailto:info@evergreenenergy.com">info@evergreenenergy.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="jobdescription.html">Job Description</a></td>
+                        <td><a href="https://dragqon.atlassian.net/jira/software/projects/G03/boards/4/backlog">Jira</a></td>
+                        <td>Support: <a href="mailto:support@evergreenenergy.com">support@evergreenenergy.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="jobapplication.html">Apply</a></td>
+                        <td></td>
+                        <td>Phone: <a href="tel:+97423400432">+974 2340 0432</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="aboutus.html">About Us</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

@@ -8,31 +8,27 @@
     <meta name="author" content="Group G03">
     <title>Home | Sustainable Energy Solutions</title>
     <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="layout.css">
     <!--one internal style element-->
     <style>.join { border-left: 6px solid #7aa602; } </style>
 </head>
 <body>
-    <!--!enable keyboard nav!-->
-<a href="#main" class="skip-link">Skip to main content</a>   
- <!-- Shared header and navigation (designed by Marwa) -->
-  <header>
-    <nav>
-  <div class="nav-container">
-    <!-- Company Logo -->
-    <div class="nav-logo">
-        <img src="images/logo.png" width="350" alt="evergreenlogo">
-    </div>
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-    <!-- Navigation Links -->
-    <ul class="nav-links">
-      <li><a href="homepage.html">Homepage</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="jobdescription.html">Jobs</a></li>
-          <li><a href="jobapplication.html">Apply</a></li>
-    </ul>
-  </div>
-</nav>
-</header>
+    <!-- ===== Shared header and navigation (designed by Marwah) ===== -->
+    <header id="site-header">
+        <nav class="nav-container" aria-label="Main navigation">
+            <a href="homepage.html" class="nav-logo">
+                <img src="images/evergreen-coloured.png" alt="Evergreen Energy home">
+            </a>
+            <ul class="nav-links">
+                <li><a href="homepage.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="jobdescription.html">Job Description</a></li>
+                <li><a href="jobapplication.html">Apply</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
 <main id="main" tabindex="-1">
     <div class="search-bar">
     <form action="#" method="get" role="search">
@@ -225,42 +221,47 @@ Since 2020, we have helped Australians cut their energy costs and reduce their c
 </section>
 </main>
 
-<!-- ===== Footer by Marwah ===== -->
-   <footer>
-  <div class="footer-container">
-    <!-- Left Section: Logo and Motto -->
-    <div class="footer-left">
-      <img src="images/logo.png" alt="Evergreen Energy Logo" class="footer-logo">
-      <p class="footer-motto">
-        At Evergreen Energy, we are committed to delivering eco-friendly solutions that harness the power of wind, solar, and water. 
-        Our mission is to create sustainable energy systems that protect the planet while empowering communities through helping them 
-        participate in our action and help them become more empowered individuals.
-      </p>
-      <p class="footer-copy">&copy; 2026 Evergreen Energy | Building a greener tomorrow</p>
-    </div>
+    <!-- ===== Shared footer (designed by Marwah) ===== -->
+    <footer id="site-footer">
+        <div class="footer-container">
+            <!-- Left: logo, motto and copyright -->
+            <div class="footer-left">
+                <img src="images/evergreen-white.png" alt="Evergreen Energy logo" class="footer-logo">
+                <p class="footer-motto">Sustainable energy for a greener future.</p>
+                <p class="footer-copy">&copy; 2026 Evergreen Energy | Group G03, COS10026 Web Technology Project</p>
+            </div>
 
-    <!-- Right Section: Table with Quick Links and Contact Us -->
-    <div class="footer-right">
-      <table class="footer-table">
-        <tr>
-          <th>Quick Links</th>
-          <th>Contact Us</th>
-        </tr>
-        <tr>
-          <td><a href="https://github.com/raad106729165/G03-Sustainable-Energy-Solutions-Company.git">GitHub</a></td>
-          <td>📧 <a href="mailto:info@evergreenenergy.com">info@evergreenenergy.com</a></td>
-        </tr>
-        <tr>
-          <td><a href="https://dragqon.atlassian.net/jira/software/projects/G03/boards/4/backlog?atlOrigin=eyJpIjoiZjEwNzQ1ZTM3ZDIyNGIyYTkwNmRhODJiN2VmNmYzNjUiLCJwIjoiaiJ9">Jira</a></td>
-          <td>📬 <a href="mailto:support@evergreenenergy.com">support@evergreenenergy.com</a></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>📞 <a href="tel:+97423400432">+974 23400432</a></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-</footer>
+            <!-- Right: page links, quick links and contact details -->
+            <div class="footer-right">
+                <table class="footer-table">
+                    <tr>
+                        <th scope="col">Pages</th>
+                        <th scope="col">Quick Links</th>
+                        <th scope="col">Contact Us</th>
+                    </tr>
+                    <tr>
+                        <td><a href="homepage.html">Home</a></td>
+                        <td><a href="https://github.com/raad106729165/G03-Sustainable-Energy-Solutions-Company">GitHub</a></td>
+                        <td>Email: <a href="mailto:info@evergreenenergy.com">info@evergreenenergy.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="jobdescription.html">Job Description</a></td>
+                        <td><a href="https://dragqon.atlassian.net/jira/software/projects/G03/boards/4/backlog">Jira</a></td>
+                        <td>Support: <a href="mailto:support@evergreenenergy.com">support@evergreenenergy.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="jobapplication.html">Apply</a></td>
+                        <td></td>
+                        <td>Phone: <a href="tel:+97423400432">+974 2340 0432</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="aboutus.html">About Us</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

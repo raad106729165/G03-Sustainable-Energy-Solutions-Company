@@ -13,6 +13,7 @@
 
     <!-- External CSS stylesheet -->
     <link rel="stylesheet" href="jobdescriptionstyle.css">
+    <link rel="stylesheet" href="layout.css">
 
     <!-- Embedded CSS example -->
     <style>
@@ -27,27 +28,25 @@
 
 <body>
 
-    <!-- Website header -->
-    <header class="site-header">
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-        <div class="brand">
-            <h1>Evergreen Energy Sustainable Energy Solutions</h1>
-            <p>Smarter energy for a sustainable tomorrow</p>
-        </div>
-
-        <!-- Main navigation -->
-        <nav>
-            <ul>
+    <!-- ===== Shared header and navigation (designed by Marwah) ===== -->
+    <header id="site-header">
+        <nav class="nav-container" aria-label="Main navigation">
+            <a href="homepage.html" class="nav-logo">
+                <img src="images/evergreen-coloured.png" alt="Evergreen Energy home">
+            </a>
+            <ul class="nav-links">
                 <li><a href="homepage.html">Home</a></li>
-                <li><a href="jobdescription.html" class="active">Jobs</a></li>
-                <li><a href="jobapplication.html">Apply Now</a></li>
+                <li><a href="jobdescription.html" class="active" aria-current="page">Job Description</a></li>
+                <li><a href="jobapplication.html">Apply</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main page content -->
-    <main>
+    <main id="main">
 
         <!-- Career introduction -->
         <section class="career-intro">
@@ -352,24 +351,47 @@
     </main>
 
     <!-- Website footer -->
-    <footer class="site-footer">
+    <!-- ===== Shared footer (designed by Marwah) ===== -->
+    <footer id="site-footer">
+        <div class="footer-container">
+            <!-- Left: logo, motto and copyright -->
+            <div class="footer-left">
+                <img src="images/evergreen-white.png" alt="Evergreen Energy logo" class="footer-logo">
+                <p class="footer-motto">Sustainable energy for a greener future.</p>
+                <p class="footer-copy">&copy; 2026 Evergreen Energy | Group G03, COS10026 Web Technology Project</p>
+            </div>
 
-        <p>
-            &copy; 2026 Evergreen Energy Sustainable Energy Solutions
-        </p>
-
-        <p>
-            Group 3 |
-            <a href="mailto:info@evergreenenergy.com">
-                info@evergreenenergy.com
-            </a>
-        </p>
-
-        <!-- Inline CSS example -->
-        <p style="font-size: 0.9rem;">
-            Smarter energy for a sustainable tomorrow.
-        </p>
-
+            <!-- Right: page links, quick links and contact details -->
+            <div class="footer-right">
+                <table class="footer-table">
+                    <tr>
+                        <th scope="col">Pages</th>
+                        <th scope="col">Quick Links</th>
+                        <th scope="col">Contact Us</th>
+                    </tr>
+                    <tr>
+                        <td><a href="homepage.html">Home</a></td>
+                        <td><a href="https://github.com/raad106729165/G03-Sustainable-Energy-Solutions-Company">GitHub</a></td>
+                        <td>Email: <a href="mailto:info@evergreenenergy.com">info@evergreenenergy.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="jobdescription.html">Job Description</a></td>
+                        <td><a href="https://dragqon.atlassian.net/jira/software/projects/G03/boards/4/backlog">Jira</a></td>
+                        <td>Support: <a href="mailto:support@evergreenenergy.com">support@evergreenenergy.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="jobapplication.html">Apply</a></td>
+                        <td></td>
+                        <td>Phone: <a href="tel:+97423400432">+974 2340 0432</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="aboutus.html">About Us</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </footer>
 
 </body>
