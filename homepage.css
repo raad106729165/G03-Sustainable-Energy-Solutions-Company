@@ -121,6 +121,16 @@ body {
   background:linear-gradient(rgba(10, 40, 20, 0.45), rgba(10, 40, 20, 0.25)),
   url("images/hero_content.jpg") center 70% / cover no-repeat;}
 
+/* Logo in the hero: white rounded tile so the coloured logo stays readable on the photo */
+.hero-logo {
+  display: block;
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 8px;
+  background-color: #ffffff;
+  border-radius: 12px;}
+
 .apply {
   display: inline-block;
   background-color: #2e7d32;
@@ -325,5 +335,6 @@ main aside {
   .offices { flex-direction: column; }
   .hero-content { padding: 40px 24px; min-height: 340px; }
   h1 { font-size: 2.2em; }
+  .hero-logo { width: 90px; }
 
 }

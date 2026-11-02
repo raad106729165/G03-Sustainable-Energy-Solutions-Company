@@ -13,10 +13,10 @@
     <meta name="keywords" content="Evergreen Energy, about us, Group G03, team, sustainable energy, clean energy careers">
     <meta name="author" content="Rayahen Raad, Group G03">
     <title>About Us | Evergreen Energy</title>
-    <!-- External stylesheet for the About Us page -->
+    <!-- 1. EXTERNAL CSS: linked stylesheets for the About Us page and the shared header/footer -->
     <link rel="stylesheet" href="aboutusstyle.css">
     <link rel="stylesheet" href="layout.css">
-    <!-- Embedded CSS example: styles used only on the About Us page -->
+    <!-- 2. INTERNAL (embedded) CSS: a <style> block used only on the About Us page -->
     <style>
         .slogan {
             margin-top: -8px;
@@ -97,38 +97,38 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Inline CSS example: highlights the team leader's row -->
+                    <!-- 3. INLINE CSS: a style attribute that bolds the team leader's row -->
                     <tr style="font-weight: bold;">
                         <th>Rayahen Raad</th>
-                        <td>106729165</td>
+                        <td><span class="student-id">106729165</span></td>
                         <td>Team leader</td>
                         <td>About Us page, shared stylesheet</td>
                         <td><code>aboutus.html</code></td>
                     </tr>
                     <tr>
                         <th>Redha</th>
-                        <td>106389158</td>
+                        <td><span class="student-id">106389158</span></td>
                         <td>Team member</td>
                         <td>Home page</td>
                         <td><code>homepage.html</code></td>
                     </tr>
                     <tr>
                         <th>Marwa</th>
-                        <td>106245690</td>
+                        <td><span class="student-id">106245690</span></td>
                         <td>Team member</td>
                         <td>Navigation bar and footer</td>
                         <td><code>header-footer.html</code></td>
                     </tr>
                     <tr>
                         <th>Hiba</th>
-                        <td>106246499</td>
+                        <td><span class="student-id">106246499</span></td>
                         <td>Team member</td>
                         <td>Job application page</td>
                         <td><code>jobapplication.html</code></td>
                     </tr>
                     <tr>
                         <th>Zainab</th>
-                        <td>106194213</td>
+                        <td><span class="student-id">106194213</span></td>
                         <td>Team member</td>
                         <td>Job descriptions page</td>
                         <td><code>jobdescription.html</code></td>
@@ -141,6 +141,10 @@
         <!-- ===== Meet the team (company roles for the Evergreen Energy story) ===== -->
         <section aria-labelledby="team-heading">
             <h3 id="team-heading">Meet the Team</h3>
+            <figure class="group-photo">
+                <img src="images/group-photo.jpg" alt="Our Project Team: a collaborative team building a meaningful web experience. The five members of Group G03 stand together in front of a green Evergreen Energy background" width="1400" height="638">
+                <figcaption>Group G03, the team behind the Evergreen Energy website</figcaption>
+            </figure>
             <div class="team-grid">
             <div class="team-card leader">
                 <span class="avatar">R</span>

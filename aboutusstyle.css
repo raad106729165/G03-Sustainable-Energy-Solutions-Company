@@ -212,10 +212,51 @@ main section {
     background-color: #ffffff;
 }
 
+/* Pseudo-class: highlight the row under the mouse pointer */
+.members-table tbody tr:hover {
+    background-color: #e3f2d0;
+}
+
+/* Student IDs: monospace badge so the numbers line up and stand out */
+.student-id {
+    display: inline-block;
+    padding: 2px 8px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: #1e5631;
+    background-color: #eef6e8;
+    border: 1px solid #a4de02;
+    border-radius: 12px;
+}
+
 /* Table caption, read out by screen readers */
 .members-table caption {
     margin-bottom: 8px;
     font-style: italic;
+}
+
+/* Group photo: bordered figure, full width above the team cards */
+.group-photo {
+    margin: 0 0 24px;
+    padding: 12px;
+    background-color: #ffffff;
+    border: 3px solid #1e5631;
+    border-radius: 6px;
+}
+
+.group-photo img {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.group-photo figcaption {
+    margin-top: 8px;
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
+    color: #4a5a50;
 }
 
 /* Meet the Team: CSS Grid places cards in as many columns as fit */
@@ -326,6 +367,10 @@ main a:visited {
         flex-basis: auto;
     }
 
+    .group-photo {
+        padding: 8px;
+    }
+
     .members-table th,
     .members-table td {
         padding: 6px 8px;
@@ -349,6 +394,8 @@ main a:visited {
 /* Windows high-contrast / forced-colours mode: keep borders visible */
 @media (forced-colors: active) {
     .team-card,
+    .group-photo,
+    .student-id,
     .members-table th,
     .members-table td {
         border: 1px solid CanvasText;
