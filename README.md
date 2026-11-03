@@ -6,10 +6,14 @@ COS10026 Web Technology Project, Group 03.
 
 | Page | File | Branch | Owner(s) |
 |---|---|---|---|
-| Home | homepage.html | homepage | @MN00281 (M.Nasir), @redwaseem |
-| About Us | aboutus.html | aboutus | @raad106729165 (repo owner) |
-| Job Descriptions | jobdescription.html | jobdescription | @Zainab-061 |
-| Job Applications | jobapplication.html | jobapplication | @HibaImran6499 |
+| Home | index.html | homepage | @MN00281 (M.Nasir), @redwaseem |
+| About Us | about.html | aboutus | @raad106729165 (repo owner) |
+| Job Descriptions | jobs.html | jobdescription | @Zainab-061 |
+| Job Applications | apply.html | jobapplication | @HibaImran6499 |
+
+All four pages share one stylesheet, `styles.css`. Page-specific rules are scoped with a class on `<body>`: `body.home`, `body.jobs`, `body.apply` and `body.about`.
+
+Live site: https://raad106729165.github.io/G03-Sustainable-Energy-Solutions-Company/
 
 ## Workflow
 

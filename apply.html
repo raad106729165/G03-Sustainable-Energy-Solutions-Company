@@ -6,12 +6,10 @@
   <meta name="description" content="Apply for a job at Evergreen Energy. Complete our online application form.">
   <meta name="keywords" content="job application, careers, apply, Evergreen Energy, renewable energy">
   <meta name="author" content="Hiba Imran, Group G03">
-  <title>Apply | Evergreen Energy Careers</title>
+  <title>Apply | Evergreen Energy</title>
 
-  <!-- External stylesheet for this page -->
-  <link rel="stylesheet" href="jobapplicationstyle.css">
-  <!-- Shared header, navigation and footer -->
-  <link rel="stylesheet" href="layout.css">
+  <!-- Shared external stylesheet for every page -->
+  <link rel="stylesheet" href="styles.css">
 
   <!-- Embedded CSS -->
   <style>
@@ -25,31 +23,38 @@
   
 </head>
 
-<body>
+<body class="apply">
     <a href="#main" class="skip-link">Skip to main content</a>
 
-    <!-- ===== Shared header and navigation (designed by Marwah) ===== -->
+    <!-- ===== Shared header and navigation (designed by Marwah and edited by Rayahen Raad) ===== -->
     <header id="site-header">
         <nav class="nav-container" aria-label="Main navigation">
-            <a href="homepage.html" class="nav-logo">
-                <img src="images/evergreen-coloured.png" alt="Evergreen Energy home">
+            <!-- Brand: logo and company name, linking to the home page -->
+            <a href="index.html" class="nav-brand">
+                <span class="nav-logo">
+                    <img src="images/logo.png" alt="" width="400" height="400">
+                </span>
+                <span class="brand-text">
+                    <span class="brand-name">Evergreen Energy</span>
+                    <span class="brand-tagline">Sustainable Energy Solutions</span>
+                </span>
             </a>
             <ul class="nav-links">
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="jobdescription.html">Job Description</a></li>
-                <li><a href="jobapplication.html" class="active" aria-current="page">Apply</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Job Description</a></li>
+                <li><a href="apply.html" class="active" aria-current="page">Apply</a></li>
+                <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>
     </header>
 
   <main id="main">
-    <h2>Join Our Team</h2>
+    <h1>Join Our Team</h1>
 
     <!-- Application panel: the form scrolls inside it -->
     <section class="apply-panel" aria-labelledby="panel-heading">
       <div class="panel-header">
-        <h3 id="panel-heading">Job Application</h3>
+        <h2 id="panel-heading">Job Application</h2>
         <p>Scroll through each section, then submit.</p>
       </div>
 
@@ -63,7 +68,7 @@
           <!-- Inline CSS example -->
           <p class="form-intro" style="font-weight: bold;">
             All fields are required except "Other skills". Choose the position you are
-            applying for. You can read the details on the <a href="jobdescription.html">Jobs page</a>.
+            applying for. You can read the details on the <a href="jobs.html">Jobs page</a>.
           </p>
 
           <div class="sections">
@@ -73,13 +78,13 @@
               <legend>Position</legend>
               <div class="field">
                 <label for="jobref">Job reference number (select a position)</label>
-                <!-- Values are the exact 5-character reference numbers from jobdescription.html -->
+                <!-- Values are the exact 5-character reference numbers from jobs.html -->
                 <select id="jobref" name="jobref" required>
                   <option value="">Please select a position</option>
                   <option value="WD101">WD101 - Front-End Web Developer</option>
                   <option value="UX202">UX202 - UX/UI Designer</option>
                   <option value="RE201">RE201 - Renewable Energy Project Engineer</option>
-                  <option value="DA301">DA303 - Data Analyst - Energy Systems</option>
+                  <option value="DA301">DA301 - Data Analyst - Energy Systems</option>
                 </select>
               </div>
             </fieldset>
@@ -104,10 +109,10 @@
 
               <div class="field">
                 <label for="dob">Date of birth</label>
-                <input type="text" id="dob" name="dob"
-                       pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}"
-                       placeholder="dd/mm/yyyy" maxlength="10" required
-                       title="Use the format dd/mm/yyyy">
+                <!-- Date picker; min/max limit applicants to ages 15 to 80 -->
+                <input type="date" id="dob" name="dob"
+                       min="1945-11-02" max="2011-11-02" required
+                       title="Applicants must be between 15 and 80 years old">
               </div>
 
               <fieldset class="radio-group">
@@ -150,8 +155,8 @@
               <div class="field">
                 <label for="postcode">Postcode</label>
                 <input type="text" id="postcode" name="postcode"
-                       pattern="[0-9]{4}" maxlength="4" required
-                       title="Exactly 4 digits">
+                       pattern="0[89][0-9]{2}|[1-9][0-9]{3}" maxlength="4" required
+                       title="A valid 4-digit Australian postcode (0800 to 9999)">
               </div>
 
               <div class="field">
@@ -170,6 +175,7 @@
             <!-- Section 4: Skills -->
             <fieldset class="wide skills">
               <legend>Skills</legend>
+              <p>Tick all the skills that apply (at least one).</p>
 
               <label><input type="checkbox" name="skills[]" value="html5"> HTML5</label>
               <label><input type="checkbox" name="skills[]" value="css3"> CSS3</label>
@@ -194,13 +200,18 @@
       </form>
     </section>
 
-    <!--<section class="inclusion" aria-labelledby="inclusion-heading">
+    <section class="inclusion" aria-labelledby="inclusion-heading">
       <h2 id="inclusion-heading">Our commitment to inclusion</h2>
-      <p>Evergreen Energy encourages applications from all backgrounds.</p>
-    </section>-->
+      <p>Evergreen Energy strongly encourages Aboriginal and Torres Strait Islander peoples to apply
+        for every role we advertise. Many of our solar, wind and storage projects are built on Country,
+        and the knowledge, perspectives and leadership of First Nations people make our work stronger.
+        If you would like support with your application or any adjustments during the recruitment
+        process, please contact us at <a href="mailto:info@evergreenenergy.com">info@evergreenenergy.com</a>.</p>
+    </section>
+    <p class="page-sources">Sources and acknowledgements: the image credits and HTML and CSS references for this site are listed on the <a href="about.html#ack-heading">About Us page</a>.</p>
   </main>
 
-    <!-- ===== Shared footer (designed by Marwah) ===== -->
+    <!-- ===== Shared footer (designed by Marwah and edited by Rayahen Raad) ===== -->
     <footer id="site-footer">
         <div class="footer-container">
             <!-- Left: logo, motto and copyright -->
@@ -219,22 +230,22 @@
                         <th scope="col">Contact Us</th>
                     </tr>
                     <tr>
-                        <td><a href="homepage.html">Home</a></td>
-                        <td><a href="https://github.com/raad106729165/G03-Sustainable-Energy-Solutions-Company">GitHub</a></td>
+                        <td><a href="index.html">Home</a></td>
+                        <td><a href="https://github.com/raad106729165/G03-Sustainable-Energy-Solutions-Company">GitHub repository</a></td>
                         <td>Email: <a href="mailto:info@evergreenenergy.com">info@evergreenenergy.com</a></td>
                     </tr>
                     <tr>
-                        <td><a href="jobdescription.html">Job Description</a></td>
-                        <td><a href="https://dragqon.atlassian.net/jira/software/projects/G03/boards/4/backlog">Jira</a></td>
+                        <td><a href="jobs.html">Job Description</a></td>
+                        <td><a href="https://dragqon.atlassian.net/jira/software/projects/G03/boards/4/backlog">Jira board</a></td>
                         <td>Support: <a href="mailto:support@evergreenenergy.com">support@evergreenenergy.com</a></td>
                     </tr>
                     <tr>
-                        <td><a href="jobapplication.html">Apply</a></td>
-                        <td></td>
-                        <td>Phone: <a href="tel:+97423400432">+974 2340 0432</a></td>
+                        <td><a href="apply.html">Apply</a></td>
+                        <td><a href="https://raad106729165.github.io/G03-Sustainable-Energy-Solutions-Company/">Live website</a></td>
+                        <td>Phone: <a href="tel:+61390000000">+61 3 9000 0000</a></td>
                     </tr>
                     <tr>
-                        <td><a href="aboutus.html">About Us</a></td>
+                        <td><a href="about.html">About Us</a></td>
                         <td></td>
                         <td></td>
                     </tr>

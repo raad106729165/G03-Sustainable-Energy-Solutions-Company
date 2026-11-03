@@ -6,55 +6,60 @@
     <meta name="description" content="Sustainable Energy Solutions Company: clean energy projects and careers.">
     <meta name="keywords" content="sustainable energy, renewable energy, solar, wind, clean energy, careers">
     <meta name="author" content="Group G03">
-    <title>Home | Sustainable Energy Solutions</title>
-    <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="layout.css">
+    <title>Home | Evergreen Energy</title>
+    <link rel="stylesheet" href="styles.css">
     <!--one internal style element-->
     <style>.join { border-left: 6px solid #7aa602; } </style>
 </head>
-<body>
+<body class="home">
     <a href="#main" class="skip-link">Skip to main content</a>
 
-    <!-- ===== Shared header and navigation (designed by Marwah) ===== -->
+    <!-- ===== Shared header and navigation (designed by Marwah and edited by Rayahen Raad) ===== -->
     <header id="site-header">
         <nav class="nav-container" aria-label="Main navigation">
-            <a href="homepage.html" class="nav-logo">
-                <img src="images/evergreen-coloured.png" alt="Evergreen Energy home">
+            <!-- Brand: logo and company name, linking to the home page -->
+            <a href="index.html" class="nav-brand">
+                <span class="nav-logo">
+                    <img src="images/logo.png" alt="" width="400" height="400">
+                </span>
+                <span class="brand-text">
+                    <span class="brand-name">Evergreen Energy</span>
+                    <span class="brand-tagline">Sustainable Energy Solutions</span>
+                </span>
             </a>
             <ul class="nav-links">
-                <li><a href="homepage.html" class="active" aria-current="page">Home</a></li>
-                <li><a href="jobdescription.html">Job Description</a></li>
-                <li><a href="jobapplication.html">Apply</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="jobs.html">Job Description</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>
     </header>
 <main id="main" tabindex="-1">
     <div class="search-bar">
-    <form action="#" method="get" role="search">
-    <input type="search" name="q" placeholder="Search..." aria-label="Search">
+    <!-- Searches this website with Google once it is live on GitHub Pages -->
+    <form action="https://www.google.com/search" method="get" role="search">
+    <input type="hidden" name="as_sitesearch" value="raad106729165.github.io/G03-Sustainable-Energy-Solutions-Company">
+    <input type="search" name="q" placeholder="Search..." aria-label="Search this website">
     <button type="submit">Search</button>
   </form>
 </div>
 <section class="hero">
     <div class="hero-content">
-     <img src="images/evergreen-coloured.png" alt="Evergreen Energy logo" class="hero-logo" width="300" height="289">
      <h1>Power of Clean Energy</h1>
       <p id="intro-text">Smarter energy for a sustainable tomorrow.</p>
-      <a href="aboutus.html" class="apply">About Us</a>
+      <a href="about.html" class="apply">About Us</a>
     </div>
 </section>
 
 <section>
     <h2>Who are we?</h2>
-    <p>Evergreen Energy At Sustainable Energy Solutions Company, we believe clean energy should be simple, affordable, and available to everyone. We are dedicated to helping homes, businesses, and communities move away from fossil fuels and toward renewable power.
-
-Since 2020, we have helped Australians cut their energy costs and reduce their carbon footprint with solutions like solar installation, wind power, energy-efficient upgrades, energy audits.</p>
+    <p>Evergreen Energy is a sustainable energy solutions company. We believe clean energy should be simple, affordable, and available to everyone, and we are dedicated to helping homes, businesses, and communities move away from fossil fuels and toward renewable power.</p>
     <img src="images/powerplantwork.jpg" alt="Engineers gathered around a monitor reviewing solar panel designs" class="section-img">
 </section> 
 <section>
-    <h2 style="text-align:center;">Our Mission & Vision</h2>
-    <p style="text-align:left;">
+    <h2>Our Mission &amp; Vision</h2>
+    <p class="text-left">
         At Evergreen Energy, our mission is to make renewable power the foundation of everyday life. 
         We are driven by the belief that clean energy should not be a luxury, but a right accessible 
         to all households, businesses, and communities. Our vision is a future where fossil fuels are 
@@ -66,8 +71,8 @@ Since 2020, we have helped Australians cut their energy costs and reduce their c
 </section>
 
 <section>
-    <h2 style="text-align:center;">What Do We Do?</h2>
-    <p style="text-align:left;">
+    <h2>What Do We Do?</h2>
+    <p class="text-left">
         We provide practical, cost‑effective solutions that help Australians embrace renewable energy 
         and reduce their dependence on fossil fuels. Since 2020, our team has worked alongside 
         homeowners, businesses, and community groups to design and implement projects that deliver 
@@ -77,12 +82,12 @@ Since 2020, we have helped Australians cut their energy costs and reduce their c
         transparency, we make the shift to clean energy simple, affordable, and rewarding for everyone 
         we serve.
     </p>
-    <img src="images/engineers%20discussing%20project.jpg" alt="Engineers in hard hats discussing project plans around a table" class="section-img" width="612" height="408">
+    <img src="images/engineers-discussing-project.jpg" alt="Engineers in hard hats discussing project plans around a table" class="section-img" width="612" height="408">
 </section>
-<!-- ===== Start Done by Marwah ===== -->
+<!-- ===== Start: done by Marwah and edited by Rayahen Raad ===== -->
 <section>
-    <h2 style="text-align:center;">Commitment to Sustainability</h2>
-    <div style="text-align:center; max-width:800px; margin:0 auto;">
+    <h2>Commitment to Sustainability</h2>
+    <div class="narrow-centre">
         <p>
             At Evergreen Energy, sustainability is at the heart of everything we do. 
             We integrate eco‑friendly practices into every project, ensuring that our 
@@ -93,23 +98,27 @@ Since 2020, we have helped Australians cut their energy costs and reduce their c
     </div>
 </section>
 
-<!-- ===== End Done by Marwah ===== -->
+<!-- ===== End: done by Marwah and edited by Rayahen Raad ===== -->
 <section>
     <h2>Our Projects</h2>
     <!---!side way scroll with keyboard-->
     <div class="table-wrap" tabindex="0" role="region" aria-label="Evergreen Energy projects table">
     <table>
+        <caption class="visually-hidden">Evergreen Energy projects grouped by energy type</caption>
+        <thead>
         <tr>
-        <th colspan="4">Evergreen Energy Projects</th>
+        <th colspan="4" scope="colgroup">Evergreen Energy Projects</th>
         </tr>
         <tr>
-            <th>Energy Type</th>
-            <th>Project</th>
-            <th>Location</th>
-            <th>Status</th>
+            <th scope="col">Energy Type</th>
+            <th scope="col">Project</th>
+            <th scope="col">Location</th>
+            <th scope="col">Status</th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
-        <td rowspan="2">Solar</td>
+        <th rowspan="2" scope="rowgroup">Solar</th>
             <td>Greenfield Solar Farm</td>
             <td>Queensland</td>
             <td>In Progress</td>
@@ -120,7 +129,7 @@ Since 2020, we have helped Australians cut their energy costs and reduce their c
             <td>In Progress </td>
         </tr>
         <tr>
-            <td rowspan="2">Wind</td>
+            <th rowspan="2" scope="rowgroup">Wind</th>
             <td>Coastal Wind Farm</td>
             <td>Victoria</td>
             <td>Completed</td>
@@ -131,15 +140,16 @@ Since 2020, we have helped Australians cut their energy costs and reduce their c
             <td>In Progress</td>
         </tr>
         <tr>
-            <td>Battery Storage</td>
+            <th scope="row">Battery Storage</th>
             <td>Metropolitan Battery Project</td>
             <td>New South Wales</td>
             <td>Planned</td>
         </tr>
+        </tbody>
     </table>
     </div>
 
-   <p id="belowtable">Want to look at more projects like these? <a href="jobdescription.html">Click here</a>, or learn more about our team <a href="aboutus.html">Click here</a>.</p>
+   <p id="belowtable"><a href="#branches">Contact your nearest branch</a> or <a href="about.html">learn more about us</a>.</p>
 </section> 
 <section>
     <h2>Our Office Locations</h2>
@@ -155,7 +165,7 @@ Since 2020, we have helped Australians cut their energy costs and reduce their c
             <span>Victoria Office</span>
         </li>
         <li>
-            <img src="images/Sydney.jpg" alt="Sydney Opera House and harbour" class="office-img">
+            <img src="images/sydney.jpg" alt="Sydney Opera House and harbour" class="office-img">
             <strong>Sydney</strong>
             <span>New South Wales Office</span>
         </li>
@@ -169,7 +179,7 @@ Since 2020, we have helped Australians cut their energy costs and reduce their c
   <section class="join">
     <h2>Join Our Tech Team</h2>
     <p>We are growing our technology team. Explore our roles and apply today.</p>
-    <a class="apply" href="jobapplication.html" >Apply now</a>
+    <a class="apply" href="apply.html" >Apply now</a>
   </section>
 
   <!-- testimonials -->
@@ -178,52 +188,58 @@ Since 2020, we have helped Australians cut their energy costs and reduce their c
   <h2 id="testimonial-heading">What Our Team Says</h2>
   <figure>
   <blockquote>
-    <p>“It feels good to go to work knowing my code helps people see and understand clean energy projects in their community."</p>
-    <figcaption><strong>Raza Waqas, Software Developer</strong></figcaption>
+    <p>“It feels good to go to work knowing my code helps people see and understand clean energy projects in their community.”</p>
   </blockquote>
+  <figcaption><strong>Raza Waqas, Software Developer</strong></figcaption>
   </figure>
   </aside>
 </div>
-<section>
+<section id="branches">
     <h2>Our Branch Details</h2>
 <!-- Sideway scroll with keyboard -->
 <div class="table-wrap" tabindex="0" role="region" aria-label="Evergreen Energy branches table">
   <table>
+    <caption>Email and phone contacts for each Evergreen Energy branch</caption>
+    <thead>
     <tr>
-      <th colspan="3">Evergreen Energy Branches</th>
+      <th colspan="3" scope="colgroup">Evergreen Energy Branches</th>
     </tr>
     <tr>
-      <th>Branch</th>
-      <th>Email</th>
-      <th>Phone</th>
+      <th scope="col">Branch</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
     </tr>
+    </thead>
+    <tbody>
     <tr>
-      <td>Melbourne</td>
+      <th scope="row">Melbourne</th>
       <td><a href="mailto:melbourne@evergreenenergy.com">melbourne@evergreenenergy.com</a></td>
       <td><a href="tel:+61312345678">+61 3 1234 5678</a></td>
     </tr>
     <tr>
-      <td>Sydney</td>
+      <th scope="row">Sydney</th>
       <td><a href="mailto:sydney@evergreenenergy.com">sydney@evergreenenergy.com</a></td>
       <td><a href="tel:+61223456789">+61 2 2345 6789</a></td>
     </tr>
     <tr>
-      <td>Brisbane</td>
+      <th scope="row">Brisbane</th>
       <td><a href="mailto:brisbane@evergreenenergy.com">brisbane@evergreenenergy.com</a></td>
       <td><a href="tel:+61734567890">+61 7 3456 7890</a></td>
     </tr>
+    </tbody>
   </table>
 </div>
 </section>
-<section>
-    <!---inline style element-->
-    <p style="font-style: italic; color: #155b36;"><strong>  We acknowledge the Traditional Custodians of the lands on which we work and live, and pay our respects to Elders past and present. Sovereignty was never ceded.</strong></p>
-  
-
+<section class="acknowledgement" aria-labelledby="ack-heading">
+    <h2 id="ack-heading">Acknowledgement of Country</h2>
+    <!-- inline style element (the one inline style kept on this page) -->
+    <p style="font-style: italic; color: #155b36;"><strong>We acknowledge the Traditional Custodians of the lands on which we work and live, and pay our respects to Elders past and present. Sovereignty was never ceded.</strong></p>
+    <p>Every solar farm, wind farm and battery we build sits on Country that Aboriginal and Torres Strait Islander peoples have cared for over tens of thousands of years. Before a project begins, we seek the free, prior and informed consent of Traditional Owners, and we work with them on land use, cultural heritage protection, local jobs and shared benefits, because a clean energy future is only just if it respects the people and places it depends on.</p>
 </section>
+    <p class="page-sources">Sources and acknowledgements: the image credits and HTML and CSS references for this site are listed on the <a href="about.html#ack-heading">About Us page</a>.</p>
 </main>
 
-    <!-- ===== Shared footer (designed by Marwah) ===== -->
+    <!-- ===== Shared footer (designed by Marwah and edited by Rayahen Raad) ===== -->
     <footer id="site-footer">
         <div class="footer-container">
             <!-- Left: logo, motto and copyright -->
@@ -242,22 +258,22 @@ Since 2020, we have helped Australians cut their energy costs and reduce their c
                         <th scope="col">Contact Us</th>
                     </tr>
                     <tr>
-                        <td><a href="homepage.html">Home</a></td>
-                        <td><a href="https://github.com/raad106729165/G03-Sustainable-Energy-Solutions-Company">GitHub</a></td>
+                        <td><a href="index.html">Home</a></td>
+                        <td><a href="https://github.com/raad106729165/G03-Sustainable-Energy-Solutions-Company">GitHub repository</a></td>
                         <td>Email: <a href="mailto:info@evergreenenergy.com">info@evergreenenergy.com</a></td>
                     </tr>
                     <tr>
-                        <td><a href="jobdescription.html">Job Description</a></td>
-                        <td><a href="https://dragqon.atlassian.net/jira/software/projects/G03/boards/4/backlog">Jira</a></td>
+                        <td><a href="jobs.html">Job Description</a></td>
+                        <td><a href="https://dragqon.atlassian.net/jira/software/projects/G03/boards/4/backlog">Jira board</a></td>
                         <td>Support: <a href="mailto:support@evergreenenergy.com">support@evergreenenergy.com</a></td>
                     </tr>
                     <tr>
-                        <td><a href="jobapplication.html">Apply</a></td>
-                        <td></td>
-                        <td>Phone: <a href="tel:+97423400432">+974 2340 0432</a></td>
+                        <td><a href="apply.html">Apply</a></td>
+                        <td><a href="https://raad106729165.github.io/G03-Sustainable-Energy-Solutions-Company/">Live website</a></td>
+                        <td>Phone: <a href="tel:+61390000000">+61 3 9000 0000</a></td>
                     </tr>
                     <tr>
-                        <td><a href="aboutus.html">About Us</a></td>
+                        <td><a href="about.html">About Us</a></td>
                         <td></td>
                         <td></td>
                     </tr>
