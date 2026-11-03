@@ -6,10 +6,17 @@ COS10026 Web Technology Project, Group 03.
 
 | Page | File | Branch | Owner(s) |
 |---|---|---|---|
-| Home | index.html | homepage | @MN00281 (M.Nasir), @redwaseem |
+| Home | index.html | homepage | @MN00281 (M.Nasir), @redwaseem; support from Marwa |
 | About Us | about.html | aboutus | @raad106729165 (repo owner) |
-| Job Descriptions | jobs.html | jobdescription | @Zainab-061 |
+| Job Descriptions | jobs.html | jobdescription | @Zainab-061; support from Marwa |
 | Job Applications | apply.html | jobapplication | @HibaImran6499 |
+
+## Shared components
+
+| Component | Used on | Owner |
+|---|---|---|
+| Navigation bar | All pages | Marwa |
+| Footer | All pages | Marwa |
 
 All four pages share one stylesheet, `styles.css`. Page-specific rules are scoped with a class on `<body>`: `body.home`, `body.jobs`, `body.apply` and `body.about`.
 
